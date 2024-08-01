@@ -9,7 +9,46 @@ public class HomeController {
 
     @GetMapping("/")
     public String home(Model model) {
-        model.addAttribute("message", "Hello, Thymeleaf with Tailwind CSS!");
         return "index";
+    }
+
+    @GetMapping("/equipo")
+    public String equipo(Model model) {
+        return "equipo";
+    }
+
+    @GetMapping("/proyecto")
+    public String proyecto(Model model) {
+        return "proyecto";
+    }
+
+    @GetMapping("/requerimientos")
+    public String requerimientos(Model model) {
+        return "requerimientos";
+    }
+
+    @GetMapping("/arquitectura")
+    public String arquitectura(Model model) {
+        return "arquitectura";
+    }
+
+    @GetMapping("/desarrollo")
+    public String desarrollo(Model model) {
+        return "desarrollo";
+    }
+
+    @GetMapping("/pruebas")
+    public String pruebas(Model model) {
+        return "pruebas";
+    }
+
+    @GetMapping("/despliegue")
+    public String despliegue(Model model) {
+        return "despliegue";
+    }
+
+    @GetMapping("/formulario")
+    public String formulario(Model model) {
+        return "formulario";
     }
 }
