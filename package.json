@@ -1,7 +1,6 @@
 {
   "name": "taller",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "build:css": "tailwindcss -i ./src/main/resources/static/css/tailwind.css -o ./src/main/resources/static/css/output.css --watch"
@@ -11,7 +10,10 @@
   "license": "ISC",
   "dependencies": {
     "autoprefixer": "^10.4.19",
-    "postcss": "^8.4.40",
+    "postcss": "^8.4.40"
+  },
+  "devDependencies": {
     "tailwindcss": "^3.4.7"
-  }
+  },
+  "description": ""
 }
