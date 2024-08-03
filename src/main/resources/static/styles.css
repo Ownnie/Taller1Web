@@ -1,0 +1,6 @@
+.bg-img {
+    background-image: url('../img/FondoFinca.jpg');
+    background-size: cover;
+    background-position: center;
+    filter: brightness(50%);
+}

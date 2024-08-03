@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thymeleaf with Tailwind CSS</title>
     <link href="output.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
     <script src="/js/script.js" defer></script>
 </head>
 
 <body class="bg-white">
-    <nav class="bg-yellow-600 fixed w-full flex flex-row p-6 items-center top-0">
+    <nav class="bg-yellow-600 fixed w-full flex flex-row p-6 items-center top-0 z-50">
         <ul class="flex space-x-4 items-center justify-center">
-            <img src="img/icon.png" class="max-w-12">
+            <img src="img/icon.png" class="w-12 h-12">
             <p class="font-black text-2xl text-white">ChesseRun</p>
         </ul>
         <ul class="flex space-x-4 w-full justify-end px-8">
@@ -25,38 +26,43 @@
             <li><a href="/despliegue" class="font-black text-white hover:text-yellow-300">Despliegue</a></li>
         </ul>
         <ul>
-            <li><a class="bg-white hover:bg-gray-200 text-black font-bold py-2 px-4 rounded"
-                    href="/formulario">Contactanos</a></li>
+            <li><a class="bg-white hover:bg-gray-200 text-black font-bold py-2 px-4 rounded" href="/formulario">Contáctanos</a></li>
         </ul>
     </nav>
-    <div class="mt-16">
-        <section id="equipo" class="h-screen flex items-center justify-center">
-            <h2 class="text-3xl">Arrienda Tu Finca</h2>
-        </section>
-        <p>Este proyecto se centra en el desarrollo de una plataforma tipo Airbnb de fincas, donde nuestros usuarios
-            principales son el Arrendatario y el Arrendador.</p>
-
-
-        <p>El "Usuario Arrendatario" tendrá la capacidad de realizar una variedad de acciones relacionadas con la
-            gestión de propiedades y la interacción con otros usuarios. Entre estas acciones se incluyen la
-            creación, edición, eliminación y actualización de propiedades disponibles para arrendamiento. Además,
-            este usuario será responsable de revisar y responder a todas las solicitudes de arrendamiento recibidas,
-            teniendo la opción de aceptarlas o cancelarlas según corresponda. También será su responsabilidad
-            verificar los pagos realizados por los arrendadores y proporcionar calificaciones y comentarios sobre la
-            experiencia de arrendamiento.</p>
-
-
-
-        <p>Por otro lado, el "Usuario Arrendador" tendrá un conjunto diferente de funcionalidades diseñadas para
-            facilitar el proceso de búsqueda y arrendamiento de propiedades. Este usuario podrá buscar fincas
-            disponibles filtradas por ubicación geográfica, así como solicitar el arrendamiento de una finca
-            específica. Una vez que se apruebe la solicitud, el arrendador podrá realizar el pago correspondiente
-            del arriendo y, posteriormente, calificar tanto la finca arrendada como al arrendatario.</p>
-
-
-        <p>La implementación de esta aplicación requerirá la integración de un sistema de autenticación y
-            autorización robusto para gestionar los diferentes roles y permisos de los usuarios. </p>
+    <div class="relative flex items-center justify-center h-screen bg-cover bg-center bg-[url('/img/FondoFinca.jpg')] mt-24">
+        <div class="text-center text-white z-10">
+            <h2 class="text-4xl font-bold mb-6">Arrienda Tu Finca</h2>
+            <p class="text-lg max-w-3xl mx-auto">Este proyecto se centra en el desarrollo de una plataforma tipo Airbnb de fincas, donde nuestros usuarios principales son el Arrendatario y el Arrendador.</p>
+        </div>
+        <div class="absolute inset-0 bg-black opacity-50 z-0"></div>
     </div>
+    
+    <div class="px-4 py-6">
+        <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+            <div class="bg-gradient-to-r from-yellow-100 to-orange-200 rounded-xl shadow-lg p-6 transition-transform transform hover:scale-105 duration-300 flex flex-col">
+                <h3 class="text-xl font-extrabold text-gray-800 mb-4">Usuario Arrendatario</h3>
+                <p class="text-gray-800 leading-relaxed flex-grow">
+                    El "Usuario Arrendatario" tendrá la capacidad de realizar una variedad de acciones relacionadas con la gestión de propiedades y la interacción con otros usuarios. Entre estas acciones se incluyen la creación, edición, eliminación y actualización de propiedades disponibles para arrendamiento. Además, este usuario será responsable de revisar y responder a todas las solicitudes de arrendamiento recibidas, teniendo la opción de aceptarlas o cancelarlas según corresponda. También será su responsabilidad verificar los pagos realizados por los arrendadores y proporcionar calificaciones y comentarios sobre la experiencia de arrendamiento.
+                </p>
+            </div>
+    
+            <div class="bg-gradient-to-r from-yellow-100 to-orange-200 rounded-xl shadow-lg p-6 transition-transform transform hover:scale-105 duration-300 flex flex-col">
+                <h3 class="text-xl font-extrabold text-gray-800 mb-4">Usuario Arrendador</h3>
+                <p class="text-gray-800 leading-relaxed flex-grow">
+                    Por otro lado, el "Usuario Arrendador" tendrá un conjunto diferente de funcionalidades diseñadas para facilitar el proceso de búsqueda y arrendamiento de propiedades. Este usuario podrá buscar fincas disponibles filtradas por ubicación geográfica, así como solicitar el arrendamiento de una finca específica. Una vez que se apruebe la solicitud, el arrendador podrá realizar el pago correspondiente del arriendo y, posteriormente, calificar tanto la finca arrendada como al arrendatario.
+                </p>
+            </div>
+    
+            <div class="bg-gradient-to-r from-yellow-100 to-orange-200 rounded-xl shadow-lg p-6 transition-transform transform hover:scale-105 duration-300 flex flex-col">
+                <h3 class="text-xl font-extrabold text-gray-800 mb-4">Implementación</h3>
+                <p class="text-gray-800 leading-relaxed flex-grow">
+                    La implementación de esta aplicación requerirá la integración de un sistema de autenticación y autorización robusto para gestionar los diferentes roles y permisos de los usuarios.
+                </p>
+            </div>
+        </div>
+    </div>
+        
+    
 </body>
 
 </html>
