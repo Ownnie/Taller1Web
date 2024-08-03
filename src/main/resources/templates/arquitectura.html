@@ -1,12 +1,15 @@
-src/main/resources/templates/proyecto.html<!DOCTYPE html>
+src/main/resources/templates/proyecto.html
+<!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thymeleaf with Tailwind CSS</title>
+    <title>Arquitectura</title>
     <link href="output.css" rel="stylesheet">
     <script src="/js/script.js" defer></script>
 </head>
+
 <body class="bg-white">
     <nav class="bg-yellow-600 fixed w-full flex flex-row p-6 items-center top-0">
         <ul class="flex space-x-4 items-center justify-center">
@@ -23,13 +26,49 @@ src/main/resources/templates/proyecto.html<!DOCTYPE html>
             <li><a href="/despliegue" class="font-black text-white hover:text-yellow-300">Despliegue</a></li>
         </ul>
         <ul>
-            <li><a class="bg-white hover:bg-gray-200 text-black font-bold py-2 px-4 rounded" href="/formulario">Contactanos</a></li>
+            <li><a class="bg-white hover:bg-gray-200 text-black font-bold py-2 px-4 rounded"
+                    href="/formulario">Contactanos</a></li>
         </ul>
     </nav>
-    <div class="mt-16">
-        <section id="equipo" class="h-screen flex items-center justify-center">
-            <h2 class="text-3xl">Arquitectura</h2>
-        </section>
+    <div class="bg-slate-300 py-10 flex items-center justify-center py-28">
+        <div class="container mx-auto">
+            <h1 class="text-4xl font-bold mb-10">Diagramas de referencia C4</h1>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 justify-items-center">
+                <!-- Card 1 -->
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                    <h2 class="text-2xl font-bold text-center mb-2">Diagrama de Contexto</h2>
+                    <img class="w-full h-96 object-cover" src="../img/ContextTemp.png" alt="Nombre 1">
+                </div>
+
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                    <h2 class="text-2xl font-bold text-center mb-2">Diagrama de Contenedores</h2>
+                    <img class="w-full h-96 object-cover" src="../img/ContenedoresTemp.png" alt="Nombre 1">
+                </div>
+
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                    <h2 class="text-2xl font-bold text-center mb-2">Diagrama de Componentes</h2>
+                    <img class="w-full h-96 object-cover" src="../img/ComponentsTemp.png" alt="Nombre 1">
+                </div>
+            </div>
+            <h1 class="text-4xl font-bold mb-10">Modelos</h1>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 justify-items-center">
+                <!-- Card 1 -->
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                    <h2 class="text-2xl font-bold text-center mb-2">Modelo Entidad/Relación</h2>
+                    <img class="w-full h-96 object-cover" src="../img/EntityTemp.jpeg" alt="Nombre 1">
+                </div>
+            </div>
+
+            <h1 class="text-4xl font-bold mb-10">Otros Diagramas</h1>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 justify-items-center">
+                <!-- Card 1 -->
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                    <h2 class="text-2xl font-bold text-center mb-2">Diagrama de Despliegue</h2>
+                    <img class="w-full h-96 object-cover" src="../img/DeployTemp.jpeg" alt="Nombre 1">
+                </div>
+            </div>
+        </div>
     </div>
 </body>
+
 </html>

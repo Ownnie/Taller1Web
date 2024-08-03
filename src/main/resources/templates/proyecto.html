@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link href="output.css" rel="stylesheet">
     <script src="/js/script.js" defer></script>
 </head>
+
 <body class="bg-white">
     <nav class="bg-yellow-600 fixed w-full flex flex-row p-6 items-center top-0">
         <ul class="flex space-x-4 items-center justify-center">
@@ -23,13 +25,38 @@
             <li><a href="/despliegue" class="font-black text-white hover:text-yellow-300">Despliegue</a></li>
         </ul>
         <ul>
-            <li><a class="bg-white hover:bg-gray-200 text-black font-bold py-2 px-4 rounded" href="/formulario">Contactanos</a></li>
+            <li><a class="bg-white hover:bg-gray-200 text-black font-bold py-2 px-4 rounded"
+                    href="/formulario">Contactanos</a></li>
         </ul>
     </nav>
     <div class="mt-16">
         <section id="equipo" class="h-screen flex items-center justify-center">
-            <h2 class="text-3xl">Proyecto</h2>
+            <h2 class="text-3xl">Arrienda Tu Finca</h2>
         </section>
+        <p>Este proyecto se centra en el desarrollo de una plataforma tipo Airbnb de fincas, donde nuestros usuarios
+            principales son el Arrendatario y el Arrendador.</p>
+
+
+        <p>El "Usuario Arrendatario" tendrá la capacidad de realizar una variedad de acciones relacionadas con la
+            gestión de propiedades y la interacción con otros usuarios. Entre estas acciones se incluyen la
+            creación, edición, eliminación y actualización de propiedades disponibles para arrendamiento. Además,
+            este usuario será responsable de revisar y responder a todas las solicitudes de arrendamiento recibidas,
+            teniendo la opción de aceptarlas o cancelarlas según corresponda. También será su responsabilidad
+            verificar los pagos realizados por los arrendadores y proporcionar calificaciones y comentarios sobre la
+            experiencia de arrendamiento.</p>
+
+
+
+        <p>Por otro lado, el "Usuario Arrendador" tendrá un conjunto diferente de funcionalidades diseñadas para
+            facilitar el proceso de búsqueda y arrendamiento de propiedades. Este usuario podrá buscar fincas
+            disponibles filtradas por ubicación geográfica, así como solicitar el arrendamiento de una finca
+            específica. Una vez que se apruebe la solicitud, el arrendador podrá realizar el pago correspondiente
+            del arriendo y, posteriormente, calificar tanto la finca arrendada como al arrendatario.</p>
+
+
+        <p>La implementación de esta aplicación requerirá la integración de un sistema de autenticación y
+            autorización robusto para gestionar los diferentes roles y permisos de los usuarios. </p>
     </div>
 </body>
+
 </html>
