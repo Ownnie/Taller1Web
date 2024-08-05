@@ -47,8 +47,9 @@ public class HomeController {
         return "despliegue";
     }
 
-    @GetMapping("/formulario")
-    public String formulario(Model model) {
-        return "formulario";
+    @GetMapping("/gracias")
+    public String gracias(Model model) {
+        return "gracias";
     }
+
 }
