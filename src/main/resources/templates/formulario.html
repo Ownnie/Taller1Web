@@ -37,14 +37,15 @@
         </ul>
     </nav>
 
-    <div class="mt-16 bg-rose-400 flex flex-col items-center justify-center h-screen">
+    <div class="mt-16 bg-blue-400 flex flex-col items-center justify-center h-screen">
         <h1 class="text-3xl text-white">~F O R M U L A R I O~</h2>
-        <p class="text-sm italic text-red-200 mt-2">Registrate ahoraaa</p>
+        <p class="text-sm italic text-gray-400 mt-2">Registrate ahoraaa</p>
     </div>
 
-    <div class="mt-24">
+    <div class="justify-center items-center flex py-12">
+        <div class="w-2/3 rounded-3xl shadow-lg bg-blue-400">
         <h1 class="h-48 flex items-center justify-center text-5xl font-extrabold">Formulario de Contacto</h1>
-        <div class="flex items-center justify-center bg-slate-100 p-6 rounded-lg shadow-md">
+        <div class="flex items-center justify-center">
             <section class="mb-20 py-6 w-full max-w-lg">
                 <form th:action="@{/formulario}" th:object="${contact}" method="post" class="space-y-4">
                     <div>
@@ -103,6 +104,7 @@
                 </form>
             </section>
         </div>
+    </div>
     </div>
 </body>
 
