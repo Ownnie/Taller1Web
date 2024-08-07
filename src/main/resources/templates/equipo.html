@@ -10,23 +10,24 @@
 </head>
 
 <body class="bg-white">
-    <nav class="bg-yellow-600 fixed w-full flex flex-row p-6 items-center top-0">
+    <nav class="bg-yellow-600 fixed w-full flex flex-row p-6 items-center top-0 z-50">
         <ul class="flex space-x-4 items-center justify-center">
             <img src="img/icon.png" class="max-w-12">
             <p class="font-black text-2xl text-white">ChesseRun</p>
         </ul>
         <ul class="flex space-x-4 w-full justify-end px-8">
-            <li><a href="/proyecto" class="font-black text-white hover:text-yellow-300">Proyecto</a></li>
-            <li><a href="/equipo" class="font-black text-white hover:text-yellow-300">Equipo</a></li>
-            <li><a href="/requerimientos" class="font-black text-white hover:text-yellow-300">Requerimientos</a></li>
-            <li><a href="/arquitectura" class="font-black text-white hover:text-yellow-300">Arquitectura</a></li>
-            <li><a href="/desarrollo" class="font-black text-white hover:text-yellow-300">Desarrollo</a></li>
-            <li><a href="/pruebas" class="font-black text-white hover:text-yellow-300">Pruebas</a></li>
-            <li><a href="/despliegue" class="font-black text-white hover:text-yellow-300">Despliegue</a></li>
+            <li><a th:href="@{/proyecto}" class="font-black text-white hover:text-yellow-300">Proyecto</a></li>
+            <li><a th:href="@{/equipo}" class="font-black text-white hover:text-yellow-300">Equipo</a></li>
+            <li><a th:href="@{/requerimientos}" class="font-black text-white hover:text-yellow-300">Requerimientos</a>
+            </li>
+            <li><a th:href="@{/arquitectura}" class="font-black text-white hover:text-yellow-300">Arquitectura</a></li>
+            <li><a th:href="@{/desarrollo}" class="font-black text-white hover:text-yellow-300">Desarrollo</a></li>
+            <li><a th:href="@{/pruebas}" class="font-black text-white hover:text-yellow-300">Pruebas</a></li>
+            <li><a th:href="@{/despliegue}" class="font-black text-white hover:text-yellow-300">Despliegue</a></li>
         </ul>
         <ul>
             <li><a class="bg-white hover:bg-gray-200 text-black font-bold py-2 px-4 rounded"
-                    href="/formulario">Contactanos</a></li>
+                    th:href="@{/formulario}">Contactanos</a></li>
         </ul>
     </nav>
     <div class="mt-16 bg-sky-700 flex flex-col items-center justify-center h-screen">
