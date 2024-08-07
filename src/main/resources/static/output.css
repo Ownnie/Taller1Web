@@ -953,6 +953,7 @@ video {
 }
 
 .bg-white {
+
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
@@ -962,15 +963,39 @@ video {
   background-color: rgb(202 138 4 / var(--tw-bg-opacity));
 }
 
+.bg-sky-700 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(3 105 161 / var(--tw-bg-opacity));
+}
+
+.bg-red-950 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(69 10 10 / var(--tw-bg-opacity));
+}
+
+.bg-slate-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(148 163 184 / var(--tw-bg-opacity));
+}
+
+.bg-cyan-200 {
+
+  --tw-bg-opacity: 1;
+  background-color: rgb(165 243 252 / var(--tw-bg-opacity));
+}
+
+.bg-sky-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(224 242 254 / var(--tw-bg-opacity));
+}
+
 .bg-sky-200 {
   --tw-bg-opacity: 1;
   background-color: rgb(186 230 253 / var(--tw-bg-opacity));
 }
 
-.bg-sky-700 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(3 105 161 / var(--tw-bg-opacity));
-}
+
+
 
 .bg-\[url\(\'\/img\/FondoFinca\.jpg\'\)\] {
   background-image: url('/img/FondoFinca.jpg');
@@ -998,6 +1023,14 @@ video {
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
+
+.from-sky-200 {
+  --tw-gradient-from: #bae6fd var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(186 230 253 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+
 .to-orange-200 {
   --tw-gradient-to: #fed7aa var(--tw-gradient-to-position);
 }
@@ -1005,6 +1038,12 @@ video {
 .to-rose-300 {
   --tw-gradient-to: #fda4af var(--tw-gradient-to-position);
 }
+
+=======
+.to-sky-500 {
+  --tw-gradient-to: #0ea5e9 var(--tw-gradient-to-position);
+}
+
 
 .to-sky-600 {
   --tw-gradient-to: #0284c7 var(--tw-gradient-to-position);
@@ -1213,6 +1252,14 @@ video {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
+
+
+
+.text-cyan-700 {
+  --tw-text-opacity: 1;
+  color: rgb(14 116 144 / var(--tw-text-opacity));
+}
+
 
 .opacity-50 {
   opacity: 0.5;

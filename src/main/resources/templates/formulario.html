@@ -6,16 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <style>
-        .error {
-            border-color: red;
-        }
-
-        .error-message {
-            color: red;
-        }
-    </style>
-    <script src="script.js"></script>
 </head>
 
 <body class="bg-white">
@@ -39,7 +29,7 @@
 
     <div class="mt-16 bg-blue-400 flex flex-col items-center justify-center h-screen">
         <h1 class="text-3xl text-white">~F O R M U L A R I O~</h2>
-        <p class="text-sm italic text-gray-400 mt-2">Registrate ahoraaa</p>
+        <p class="text-sm italic text-gray-300 mt-2">Completa el formulario para ponerte en contacto con nosotros</p>
     </div>
 
     <div class="justify-center items-center flex py-12">
@@ -54,8 +44,7 @@
                             oninput="updateCharacterCount(this, 100)"
                             class="w-full border border-gray-300 rounded p-2">
                         <span id="nombres-char-count" class="text-sm text-gray-500">0/100</span>
-                        <span th:if="${#fields.hasErrors('nombres')}" th:errors="*{nombres}"
-                            class="text-sm text-red-500"></span>
+                        <div id="nombres-error" class="text-red-500"></div>
                     </div>
 
                     <div>
@@ -64,9 +53,7 @@
                             oninput="updateCharacterCount(this, 100)"
                             class="w-full border border-gray-300 rounded p-2">
                         <span id="apellidos-char-count" class="text-sm text-gray-500">0/100</span>
-                        <span th:if="${#fields.hasErrors('apellidos')}" th:errors="*{apellidos}"
-                            class="text-sm text-red-500"></span>
-                    </div>
+                        <div id="apellidos-error" class="text-red-500"></div>
 
                     <div>
                         <label for="correo" class="block text-gray-700">Correo:</label>
@@ -74,34 +61,30 @@
                             oninput="validateEmail(this); updateCharacterCount(this, 100)"
                             class="w-full border border-gray-300 rounded p-2">
                         <span id="correo-char-count" class="text-sm text-gray-500">0/100</span>
-                        <span id="correo-error" class="error-message text-sm text-red-500"></span>
-                        <span th:if="${#fields.hasErrors('correo')}" th:errors="*{correo}"
-                            class="text-sm text-red-500"></span>
+                        <div id="correo-error" class="text-red-500"></div>
                     </div>
 
                     <div>
                         <label for="semestre" class="block text-gray-700">Semestre:</label>
-                        <input type="number" id="semestre" th:field="*{semestre}"
+                        <input type="number" id="semestre" th:field="*{semestre}" min="0" max="16"
                             class="w-full border border-gray-300 rounded p-2">
-                        <span th:if="${#fields.hasErrors('semestre')}" th:errors="*{semestre}"
-                            class="text-sm text-red-500"></span>
                     </div>
 
                     <div>
                         <label for="descripcion" class="block text-gray-700">Descripción:</label>
                         <textarea id="descripcion" th:field="*{descripcion}"
                             class="w-full border border-gray-300 rounded p-2"></textarea>
-                        <span th:if="${#fields.hasErrors('descripcion')}" th:errors="*{descripcion}"
-                            class="text-sm text-red-500"></span>
+                            <div id="descripcion-error" class="text-red-500"></div>
                     </div>
 
                     <div class="flex justify-center">
-                        <button type="submit"
+                        <button type="submit" style="margin-top: 20px"
                             class="bg-yellow-600 hover:bg-yellow-700 text-white font-bold py-2 px-4 rounded">
                             Enviar
                         </button>
                     </div>
                 </form>
+                <script src="script.js"></script>
             </section>
         </div>
     </div>
