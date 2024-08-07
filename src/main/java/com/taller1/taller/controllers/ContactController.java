@@ -28,10 +28,10 @@ public class ContactController {
     public String submitForm(@Valid Contact contact, BindingResult bindingResult, Model model) {
         if (bindingResult.hasErrors()) {
             return "formulario";
-        } else {
+        } 
             contactRepository.save(contact);
             return "redirect:/gracias";
-        }
+        
     }
 
 }
