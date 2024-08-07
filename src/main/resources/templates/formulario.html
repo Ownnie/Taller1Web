@@ -5,11 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="output.css" rel="stylesheet">
+
+
 </head>
 
 <body class="bg-white">
-    <nav class="bg-yellow-600 fixed w-full flex flex-row p-4 items-center top-0">
+    <nav class="bg-yellow-600 fixed w-full flex flex-row p-6 items-center top-0">
         <div class="flex items-center space-x-4">
             <img src="img/icon.png" class="w-12 h-12">
             <p class="font-black text-2xl text-white">ChesseRun</p>
@@ -27,67 +29,68 @@
         </ul>
     </nav>
 
-    <div class="mt-16 bg-blue-400 flex flex-col items-center justify-center h-screen">
+    <div class="mt-16 bg-sky-700 flex flex-col items-center justify-center h-screen">
         <h1 class="text-3xl text-white">~F O R M U L A R I O~</h2>
-        <p class="text-sm italic text-gray-300 mt-2">Completa el formulario para ponerte en contacto con nosotros</p>
+            <p class="text-sm italic text-gray-300 mt-2">Completa el formulario para ponerte en contacto con nosotros
+            </p>
     </div>
 
     <div class="justify-center items-center flex py-12">
-        <div class="w-2/3 rounded-3xl shadow-lg bg-blue-400">
-        <h1 class="h-48 flex items-center justify-center text-5xl font-extrabold">Formulario de Contacto</h1>
-        <div class="flex items-center justify-center">
-            <section class="mb-20 py-6 w-full max-w-lg">
-                <form th:action="@{/formulario}" th:object="${contact}" method="post" class="space-y-4">
-                    <div>
-                        <label for="nombres" class="block text-gray-700">Nombres:</label>
-                        <input type="text" id="nombres" th:field="*{nombres}" maxlength="100"
-                            oninput="updateCharacterCount(this, 100)"
-                            class="w-full border border-gray-300 rounded p-2">
-                        <span id="nombres-char-count" class="text-sm text-gray-500">0/100</span>
-                        <div id="nombres-error" class="text-red-500"></div>
-                    </div>
+        <div class="w-2/3 rounded-3xl shadow-lg bg-cyan-700">
+            <h1 class="h-48 flex items-center justify-center text-5xl font-extrabold">Formulario de Contacto</h1>
+            <div class="flex items-center justify-center">
+                <section class="mb-20 py-6 w-full max-w-lg">
+                    <form th:action="@{/formulario}" th:object="${contact}" method="post" class="space-y-4">
+                        <div>
+                            <label for="nombres" class="block text-gray-950">Nombres:</label>
+                            <input type="text" id="nombres" th:field="*{nombres}" maxlength="100"
+                                oninput="updateCharacterCount(this, 100)"
+                                class="w-full border border-gray-300 rounded p-2">
+                            <span id="nombres-char-count" class="text-sm text-gray-900">0/100</span>
+                            <div id="nombres-error" class="text-red-500"></div>
+                        </div>
 
-                    <div>
-                        <label for="apellidos" class="block text-gray-700">Apellidos:</label>
-                        <input type="text" id="apellidos" th:field="*{apellidos}" maxlength="100"
-                            oninput="updateCharacterCount(this, 100)"
-                            class="w-full border border-gray-300 rounded p-2">
-                        <span id="apellidos-char-count" class="text-sm text-gray-500">0/100</span>
-                        <div id="apellidos-error" class="text-red-500"></div>
+                        <div>
+                            <label for="apellidos" class="block text-gray-950">Apellidos:</label>
+                            <input type="text" id="apellidos" th:field="*{apellidos}" maxlength="100"
+                                oninput="updateCharacterCount(this, 100)"
+                                class="w-full border border-gray-300 rounded p-2">
+                            <span id="apellidos-char-count" class="text-sm text-gray-900">0/100</span>
+                            <div id="apellidos-error" class="text-red-500"></div>
 
-                    <div>
-                        <label for="correo" class="block text-gray-700">Correo:</label>
-                        <input type="text" id="correo" th:field="*{correo}" maxlength="100"
-                            oninput="validateEmail(this); updateCharacterCount(this, 100)"
-                            class="w-full border border-gray-300 rounded p-2">
-                        <span id="correo-char-count" class="text-sm text-gray-500">0/100</span>
-                        <div id="correo-error" class="text-red-500"></div>
-                    </div>
+                            <div>
+                                <label for="correo" class="block text-gray-950">Correo:</label>
+                                <input type="text" id="correo" th:field="*{correo}" maxlength="100"
+                                    oninput="validateEmail(this); updateCharacterCount(this, 100)"
+                                    class="w-full border border-gray-300 rounded p-2">
+                                <span id="correo-char-count" class="text-sm text-gray-900">0/100</span>
+                                <div id="correo-error" class="text-red-500"></div>
+                            </div>
 
-                    <div>
-                        <label for="semestre" class="block text-gray-700">Semestre:</label>
-                        <input type="number" id="semestre" th:field="*{semestre}" min="0" max="16"
-                            class="w-full border border-gray-300 rounded p-2">
-                    </div>
+                            <div>
+                                <label for="semestre" class="block text-gray-950">Semestre:</label>
+                                <input type="number" id="semestre" th:field="*{semestre}" min="0" max="16"
+                                    class="w-full border border-gray-300 rounded p-2">
+                            </div>
 
-                    <div>
-                        <label for="descripcion" class="block text-gray-700">Descripción:</label>
-                        <textarea id="descripcion" th:field="*{descripcion}"
-                            class="w-full border border-gray-300 rounded p-2"></textarea>
-                            <div id="descripcion-error" class="text-red-500"></div>
-                    </div>
+                            <div>
+                                <label for="descripcion" class="block text-gray-950">Descripción:</label>
+                                <textarea id="descripcion" th:field="*{descripcion}"
+                                    class="w-full border border-gray-300 rounded p-2"></textarea>
+                                <div id="descripcion-error" class="text-red-500"></div>
+                            </div>
 
-                    <div class="flex justify-center">
-                        <button type="submit" style="margin-top: 20px"
-                            class="bg-yellow-600 hover:bg-yellow-700 text-white font-bold py-2 px-4 rounded">
-                            Enviar
-                        </button>
-                    </div>
-                </form>
-                <script src="script.js"></script>
-            </section>
+                            <div class="flex justify-center">
+                                <button type="submit" style="margin-top: 20px"
+                                    class="bg-yellow-600 hover:bg-yellow-700 text-white font-bold py-2 px-4 rounded">
+                                    Enviar
+                                </button>
+                            </div>
+                    </form>
+                    <script src="script.js"></script>
+                </section>
+            </div>
         </div>
-    </div>
     </div>
 </body>
 
