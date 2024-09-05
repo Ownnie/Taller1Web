@@ -34,229 +34,382 @@
         <h1 class="text-3xl text-white">~P R U E B A S~</h2>
             <p class="text-sm italic text-red-200 mt-2">Conoce como probamos nuestro sistema</p>
     </div>
-    <div class="bg-slate-200 p-4 w-full h-full flex flex-col items-center gap-4">
 
-
-        <div class="flex justify-between p-4 gap-4"> <!-- 1 linea -->
-            <div
-                class="flex-none bg-gradient-to-r from-sky-300 to-sky-600 w-full max-w-xl h-auto flex rounded-xl shadow-lg overflow-hidden">
-                <!-- Cuadro a la izquierda -->
-                <div class="w-full p-6">
-                    <h3 class="text-2xl font-extrabold text-gray-800 mb-4">FrontEnd</h3>
-                    <p class="font-semibold mb-4">Los casos de prueba para el front son los siguientes:</p>
-                    <!-- front 1 -->
-                    <h1 class="text-2xl font-bold mb-4">Identificador: FE-01-1</h1>
-                    <h2 class="text-xl font-semibold mb-2">Nombre corto: Visualización de la página de inicio</h2>
-                    <p class="mb-4"><strong>Descripción:</strong> Verificar que la página de inicio se carga
-                        correctamente y muestra todos los elementos necesarios (logotipo, menú de navegación, contenido
-                        principal).</p>
-                    <p class="mb-4"><strong>Fecha y autor de creación:</strong> [Fecha] - [Tu nombre o equipo]</p>
-                    <p class="mb-4"><strong>Prerequisitos:</strong> Usuario no autenticado.</p>
-                    <p class="mb-4"><strong>Estado del software:</strong> El servidor está en funcionamiento.</p>
-                    <p class="mb-4"><strong>Datos de prueba:</strong></p>
-                    <ul class="list-disc list-inside mb-4">
-                        <li><strong>Datos de entrada:</strong> Acceso a la página de inicio sin autenticación.</li>
-                        <li><strong>Datos de salida:</strong> Página de inicio correctamente cargada con todos los
-                            elementos visibles.</li>
+    <div class="bg-slate-200 p-4 w-full h-full flex flex-col items-center gap-4 overflow-hidden">
+        <!-- Contenedor de la lista de contenidos -->
+        <div id="contenidos" class="p-6 w-full h-full bg-white shadow-md rounded-lg">
+            <h2 class="text-2xl font-bold text-gray-800 mb-4">Contenido de la Página</h2>
+            <ol class="space-y-4">
+                <li class="font-semibold">1. PLANTEAMIENTO DE PRUEBAS</li>
+                    <ul class="list-disc list-inside ml-6"> 
+                        <li><a href="#linea1">F/B 01-1</a></li>
+                        <li><a href="#linea2">F/B 01-2</a></li>
+                        <li><a href="#linea3">F/B 02-1</a></li>
                     </ul>
-                    <p class="mb-4"><strong>Pasos:</strong></p>
-                    <ol class="list-decimal list-inside mb-4">
-                        <li>Navegar a la URL de la página de inicio.</li>
-                        <li>Verificar que el logotipo esté visible en la parte superior.</li>
-                        <li>Comprobar que el menú de navegación está completo y accesible.</li>
-                        <li>Asegurarse de que el contenido principal se muestra correctamente.</li>
-                    </ol>
-                    <p class="mb-4"><strong>Puntos de validación:</strong></p>
-                    <ul class="list-disc list-inside">
-                        <li>Verificar que todos los elementos visuales (logotipo, menú, contenido) estén presentes y
-                            correctamente posicionados.</li>
-                        <li>Comprobar que no haya errores de carga o elementos faltantes.</li>
+                <li class="font-semibold"><a href="#pruebasCarga" class="text-blue-600 hover:underline">2. RESULTADOS</a></li>
+                    <ul class="list-disc list-inside ml-6"> 
+                        <li><a href="#pruebasJmeter">Pruebas con Jmeter:</a></li>
+                        <li><a href="#pruebasSonarqube">Pruebas con Sonarqube</a></li>
                     </ul>
-                </div>
-            </div>
-
-            <div
-                class="flex-none bg-gradient-to-r from-sky-300 to-sky-600 w-full max-w-xl h-auto flex rounded-xl shadow-lg overflow-hidden">
-                <!-- Cuadro a la derecha -->
-                <div class="w-full p-6">
-                    <h3 class="text-2xl font-extrabold text-gray-800 mb-4">BackEnd</h3> <!-- back 1 -->
-                    <p class="font-semibold mb-4">Los casos de prueba para el back son los siguientes:</p>
-                    <h1 class="text-2xl font-bold mb-4">Identificador: BE-01-1</h1>
-                    <h2 class="text-xl font-semibold mb-2">Nombre corto: Autenticación de usuario</h2>
-                    <p class="mb-4"><strong>Descripción:</strong> Verificar que el sistema autentica correctamente a los
-                        usuarios con credenciales válidas y rechaza credenciales inválidas.</p>
-                    <p class="mb-4"><strong>Fecha y autor de creación:</strong> [Fecha] - [Tu nombre o equipo]</p>
-                    <p class="mb-4"><strong>Prerequisitos:</strong> Usuario registrado en la base de datos.</p>
-                    <p class="mb-4"><strong>Estado del software:</strong> El sistema de autenticación está operativo.
-                    </p>
-                    <p class="mb-4"><strong>Datos de prueba:</strong></p>
-                    <ul class="list-disc list-inside mb-4">
-                        <li><strong>Datos de entrada:</strong> Credenciales válidas e inválidas (correo y contraseña).
-                        </li>
-                        <li><strong>Datos de salida:</strong> Tokens de autenticación o mensajes de error.</li>
-                    </ul>
-                    <p class="mb-4"><strong>Pasos:</strong></p>
-                    <ol class="list-decimal list-inside mb-4">
-                        <li>Enviar una solicitud de autenticación con credenciales válidas.</li>
-                        <li>Verificar que el sistema devuelva un token de autenticación válido.</li>
-                        <li>Enviar una solicitud de autenticación con credenciales inválidas.</li>
-                        <li>Verificar que el sistema devuelva un mensaje de error apropiado.</li>
-                    </ol>
-                    <p class="mb-4"><strong>Puntos de validación:</strong></p>
-                    <ul class="list-disc list-inside">
-                        <li>Asegurarse de que los tokens de autenticación sean válidos y se generen correctamente.</li>
-                        <li>Verificar que los mensajes de error sean claros y específicos para credenciales inválidas.
-                        </li>
-                    </ul>
-                </div>
-            </div>
+            </ol>
         </div>
-        <div class="flex justify-between p-4 gap-4"> <!-- 2 linea -->
-            <div
-                class="flex-none bg-gradient-to-r from-sky-300 to-sky-600 w-full max-w-xl h-auto flex rounded-xl shadow-lg overflow-hidden">
-                <!-- Cuadro a la izquierda -->
-                <div class="w-full p-6">
-                    <h1 class="text-2xl font-bold mb-4">Identificador: FE-01-2</h1> <!--Front 2-->
-                    <h2 class="text-xl font-semibold mb-2">Nombre corto: Formulario de registro funcional</h2>
-                    <p class="mb-4"><strong>Descripción:</strong> Asegurarse de que el formulario de registro funciona
-                        correctamente y valida la entrada del usuario.</p>
-                    <p class="mb-4"><strong>Fecha y autor de creación:</strong> [Fecha] - [Tu nombre o equipo]</p>
-                    <p class="mb-4"><strong>Prerequisitos:</strong> Usuario en la página de registro.</p>
-                    <p class="mb-4"><strong>Estado del software:</strong> El formulario de registro está disponible.</p>
-                    <p class="mb-4"><strong>Datos de prueba:</strong></p>
-                    <ul class="list-disc list-inside mb-4">
-                        <li><strong>Datos de entrada:</strong> Información válida y no válida en el formulario de
-                            registro.</li>
-                        <li><strong>Datos de salida:</strong> Mensajes de error apropiados para entradas inválidas y
-                            confirmación de registro para entradas válidas.</li>
-                    </ul>
-                    <p class="mb-4"><strong>Pasos:</strong></p>
-                    <ol class="list-decimal list-inside mb-4">
-                        <li>Completar el formulario de registro con datos válidos.</li>
-                        <li>Enviar el formulario.</li>
-                        <li>Verificar que se muestra un mensaje de confirmación de registro exitoso.</li>
-                        <li>Completar el formulario con datos inválidos.</li>
-                        <li>Enviar el formulario y verificar que se muestran mensajes de error claros.</li>
-                    </ol>
-                    <p class="mb-4"><strong>Puntos de validación:</strong></p>
-                    <ul class="list-disc list-inside">
-                        <li>Verificar que los mensajes de error sean precisos y claros.</li>
-                        <li>Asegurarse de que la confirmación de registro se muestre correctamente al ingresar datos
-                            válidos.</li>
-                    </ul>
-                </div>
-            </div>
 
-            <div
-                class="flex-none bg-gradient-to-r from-sky-300 to-sky-600 w-full max-w-xl h-auto flex rounded-xl shadow-lg overflow-hidden">
-                <!-- Cuadro a la derecha -->
-                <div class="w-full p-6">
-                    <h1 class="text-2xl font-bold mb-4">Identificador: BE-01-2</h1> <!--back 2-->
-                    <h2 class="text-xl font-semibold mb-2">Nombre corto: Creación de propiedades</h2>
-                    <p class="mb-4"><strong>Descripción:</strong> Verificar que el sistema permita la creación de nuevas
-                        propiedades con datos válidos y maneje correctamente las entradas inválidas.</p>
-                    <p class="mb-4"><strong>Fecha y autor de creación:</strong> [Fecha] - [Tu nombre o equipo]</p>
-                    <p class="mb-4"><strong>Prerequisitos:</strong> Usuario autenticado con permisos para crear
-                        propiedades.</p>
-                    <p class="mb-4"><strong>Estado del software:</strong> El módulo de creación de propiedades está en
-                        funcionamiento.</p>
-                    <p class="mb-4"><strong>Datos de prueba:</strong></p>
-                    <ul class="list-disc list-inside mb-4">
-                        <li><strong>Datos de entrada:</strong> Datos válidos e inválidos para la creación de
-                            propiedades.</li>
-                        <li><strong>Datos de salida:</strong> Confirmación de creación o mensajes de error.</li>
-                    </ul>
-                    <p class="mb-4"><strong>Pasos:</strong></p>
-                    <ol class="list-decimal list-inside mb-4">
-                        <li>Enviar una solicitud para crear una propiedad con datos válidos.</li>
-                        <li>Verificar que el sistema devuelva una confirmación de creación exitosa.</li>
-                        <li>Enviar una solicitud con datos inválidos.</li>
-                        <li>Verificar que el sistema devuelva mensajes de error adecuados.</li>
-                    </ol>
-                    <p class="mb-4"><strong>Puntos de validación:</strong></p>
-                    <ul class="list-disc list-inside">
-                        <li>Verificar que las propiedades se creen correctamente en la base de datos con datos válidos.
-                        </li>
-                        <li>Asegurarse de que los mensajes de error sean precisos y útiles para la corrección de
-                            entradas inválidas.</li>
-                    </ul>
-                </div>
-            </div>
+        <h1 class="text-4xl font-extrabold text-gray-800 mb-4">Planteamiento de pruebas</h1>
+        <div id="linea1" class="overflow-hidden">
+            <table class="w-full table-auto border-collapse border border-sky-500">
+                <thead class="bg-gradient-to-r from-sky-300 to-sky-600 text-white">
+                    <tr>
+                        <th class="p-4 border border-sky-500 text-left"></th>
+                        <th class="font-bold p-4 border border-sky-500 text-left">FrontEnd</th>
+                        <th class="font-bold p-4 border border-sky-500 text-left">BackEnd</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="font-bold p-4 border border-sky-500">Identificador</td>
+                        <td class="p-4 border border-sky-500">FE-01-1</td>
+                        <td class="p-4 border border-sky-500">BE-01-1</td>
+                    </tr>
+                    <tr>
+                        <td class="font-bold p-4 border border-sky-500">Nombre corto</td>
+                        <td class="p-4 border border-sky-500">Visualización de la página de inicio</td>
+                        <td class="p-4 border border-sky-500">Autenticación de usuario</td>
+                    </tr>
+                    <tr>
+                        <td class="font-bold p-4 border border-sky-500">Descripción</td>
+                        <td class="p-4 border border-sky-500">
+                            Verificar que la página de inicio se carga correctamente y muestra todos los elementos necesarios
+                            (logotipo, menú de navegación, contenido principal).
+                        </td>
+                        <td class="p-4 border border-sky-500">
+                            Verificar que el sistema autentica correctamente a los usuarios con credenciales válidas y rechaza
+                            credenciales inválidas.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="font-bold p-4 border border-sky-500">Fecha y autor de creación</td>
+                        <td class="p-4 border border-sky-500">[Fecha] - [Tu nombre o equipo]</td>
+                        <td class="p-4 border border-sky-500">[Fecha] - [Tu nombre o equipo]</td>
+                    </tr>
+                    <tr>
+                        <td class="font-bold p-4 border border-sky-500">Prerequisitos</td>
+                        <td class="p-4 border border-sky-500">Usuario no autenticado.</td>
+                        <td class="p-4 border border-sky-500">Usuario registrado en la base de datos.</td>
+                    </tr>
+                    <tr>
+                        <td class="font-bold p-4 border border-sky-500">Estado del software</td>
+                        <td class="p-4 border border-sky-500">El servidor está en funcionamiento.</td>
+                        <td class="p-4 border border-sky-500">El sistema de autenticación está operativo.</td>
+                    </tr>
+                    <tr>
+                        <td class="font-bold p-4 border border-sky-500">Datos de prueba</td>
+                        <td class="p-4 border border-sky-500">
+                            <ul class="list-disc list-inside">
+                                <li><strong>Datos de entrada:</strong> Acceso a la página de inicio sin autenticación.</li>
+                                <li><strong>Datos de salida:</strong> Página de inicio correctamente cargada con todos los
+                                    elementos visibles.</li>
+                            </ul>
+                        </td>
+                        <td class="p-4 border border-sky-500">
+                            <ul class="list-disc list-inside">
+                                <li><strong>Datos de entrada:</strong> Credenciales válidas e inválidas (correo y contraseña).
+                                </li>
+                                <li><strong>Datos de salida:</strong> Tokens de autenticación o mensajes de error.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="font-bold p-4 border border-sky-500">Pasos</td>
+                        <td class="p-4 border border-sky-500">
+                            <ol class="list-decimal list-inside">
+                                <li>Navegar a la URL de la página de inicio.</li>
+                                <li>Verificar que el logotipo esté visible en la parte superior.</li>
+                                <li>Comprobar que el menú de navegación está completo y accesible.</li>
+                                <li>Asegurarse de que el contenido principal se muestra correctamente.</li>
+                            </ol>
+                        </td>
+                        <td class="p-4 border border-sky-500">
+                            <ol class="list-decimal list-inside">
+                                <li>Enviar una solicitud de autenticación con credenciales válidas.</li>
+                                <li>Verificar que el sistema devuelva un token de autenticación válido.</li>
+                                <li>Enviar una solicitud de autenticación con credenciales inválidas.</li>
+                                <li>Verificar que el sistema devuelva un mensaje de error apropiado.</li>
+                            </ol>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="font-bold p-4 border border-sky-500">Puntos de validación</td>
+                        <td class="p-4 border border-sky-500">
+                            <ul class="list-disc list-inside">
+                                <li>Verificar que todos los elementos visuales (logotipo, menú, contenido) estén presentes y
+                                    correctamente posicionados.</li>
+                                <li>Comprobar que no haya errores de carga o elementos faltantes.</li>
+                            </ul>
+                        </td>
+                        <td class="p-4 border border-sky-500">
+                            <ul class="list-disc list-inside">
+                                <li>Asegurarse de que los tokens de autenticación sean válidos y se generen correctamente.</li>
+                                <li>Verificar que los mensajes de error sean claros y específicos para credenciales inválidas.
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
-        <div class="flex justify-between p-4 gap-4"> <!-- 3 linea -->
-            <div
-                class="flex-none bg-gradient-to-r from-sky-300 to-sky-600 w-full max-w-xl h-auto flex rounded-xl shadow-lg overflow-hidden">
-                <!-- Cuadro a la izquierda -->
-                <div class="w-full p-6">
-                    <h1 class="text-2xl font-bold mb-4">Identificador: FE-02-1</h1> <!--Front 3-->
-                    <h2 class="text-xl font-semibold mb-2">Nombre corto: Filtrado de propiedades por ubicación</h2>
-                    <p class="mb-4"><strong>Descripción:</strong> Verificar que el sistema de filtrado de propiedades
-                        por ubicación funcione correctamente en la interfaz de usuario.</p>
-                    <p class="mb-4"><strong>Fecha y autor de creación:</strong> [Fecha] - [Tu nombre o equipo]</p>
-                    <p class="mb-4"><strong>Prerequisitos:</strong> Usuario autenticado en la página de búsqueda de
-                        propiedades.</p>
-                    <p class="mb-4"><strong>Estado del software:</strong> El filtro de búsqueda está disponible y
-                        funcional.</p>
-                    <p class="mb-4"><strong>Datos de prueba:</strong></p>
-                    <ul class="list-disc list-inside mb-4">
-                        <li><strong>Datos de entrada:</strong> Ubicaciones específicas para filtrar propiedades (por
-                            ejemplo, "Madrid", "Barcelona").</li>
-                        <li><strong>Datos de salida:</strong> Lista de propiedades que coinciden con la ubicación
-                            seleccionada.</li>
-                    </ul>
-                    <p class="mb-4"><strong>Pasos:</strong></p>
-                    <ol class="list-decimal list-inside mb-4">
-                        <li>Iniciar sesión y acceder a la página de búsqueda de propiedades.</li>
-                        <li>Introducir una ubicación específica en el filtro de búsqueda.</li>
-                        <li>Aplicar el filtro y revisar los resultados.</li>
-                    </ol>
-                    <p class="mb-4"><strong>Puntos de validación:</strong></p>
-                    <ul class="list-disc list-inside">
-                        <li>Verificar que la lista de propiedades mostradas coincide con la ubicación seleccionada.</li>
-                        <li>Asegurarse de que no aparezcan propiedades fuera de la ubicación especificada.</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div
-                class="flex-none bg-gradient-to-r from-sky-300 to-sky-600 w-full max-w-xl h-auto flex rounded-xl shadow-lg overflow-hidden">
-                <!-- Cuadro a la derecha -->
-                <div class="w-full p-6">
-                    <h1 class="text-2xl font-bold mb-4">Identificador: BE-02-1</h1> <!--back 3-->
-                    <h2 class="text-xl font-semibold mb-2">Nombre corto: Procesamiento de pagos</h2>
-                    <p class="mb-4"><strong>Descripción:</strong> Verificar que el sistema procesa correctamente los
-                        pagos realizados por los arrendadores y actualiza el estado de la solicitud de arriendo.</p>
-                    <p class="mb-4"><strong>Fecha y autor de creación:</strong> [Fecha] - [Tu nombre o equipo]</p>
-                    <p class="mb-4"><strong>Prerequisitos:</strong> Usuario autenticado con una solicitud de arriendo en
-                        estado "por pagar".</p>
-                    <p class="mb-4"><strong>Estado del software:</strong> El módulo de procesamiento de pagos está
-                        operativo.</p>
-                    <p class="mb-4"><strong>Datos de prueba:</strong></p>
-                    <ul class="list-disc list-inside mb-4">
-                        <li><strong>Datos de entrada:</strong> Información de pago válida (monto, banco, número de
-                            cuenta).</li>
-                        <li><strong>Datos de salida:</strong> Confirmación de pago y actualización del estado de la
-                            solicitud en la base de datos.</li>
-                    </ul>
-                    <p class="mb-4"><strong>Pasos:</strong></p>
-                    <ol class="list-decimal list-inside mb-4">
-                        <li>Iniciar sesión y acceder a la página de solicitudes de arriendo.</li>
-                        <li>Seleccionar una solicitud en estado "por pagar" y proceder al pago.</li>
-                        <li>Completar la información de pago y enviar la solicitud.</li>
-                        <li>Verificar que el sistema procese el pago correctamente y actualice el estado de la solicitud
-                            a "pagada".</li>
-                    </ol>
-                    <p class="mb-4"><strong>Puntos de validación:</strong></p>
-                    <ul class="list-disc list-inside">
-                        <li>Comprobar que la confirmación de pago sea recibida y que el estado de la solicitud se
-                            actualice en la base de datos.</li>
-                        <li>Verificar que el sistema maneje correctamente errores en el procesamiento del pago y
-                            devuelva mensajes de error adecuados si es necesario.</li>
-                    </ul>
-                </div>
-            </div>
-
+        <div id="linea2">
+            <table class="w-full table-auto border-collapse border border-sky-950">
+                <thead>
+                    <tr class="bg-gradient-to-r from-sky-300 to-sky-600 text-white">
+                        <th class="border border-sky-950 p-2"></th>
+                        <th class="font-bold border border-sky-950 p-2">FrontEnd</th>
+                        <th class="font-bold border border-sky-950 p-2">BackEnd</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="border border-sky-950 p-2 font-bold">Identificador</td>
+                        <td class="border border-sky-950 p-2">FE-01-2</td>
+                        <td class="border border-sky-950 p-2">BE-01-2</td>
+                    </tr>
+                    <tr>
+                        <td class="border border-sky-950 p-2 font-bold">Nombre corto</td>
+                        <td class="border border-sky-950 p-2">Formulario de registro funcional</td>
+                        <td class="border border-sky-950 p-2">Creación de propiedades</td>
+                    </tr>
+                    <tr>
+                        <td class="border border-sky-950 p-2 font-bold">Descripción</td>
+                        <td class="border border-sky-950 p-2">Asegurarse de que el formulario de registro funciona correctamente y valida la entrada del usuario.</td>
+                        <td class="border border-sky-950 p-2">Verificar que el sistema permita la creación de nuevas propiedades con datos válidos y maneje correctamente las entradas inválidas.</td>
+                    </tr>
+                    <tr>
+                        <td class="border border-sky-950 p-2 font-bold">Fecha y autor de creación</td>
+                        <td class="border border-sky-950 p-2">[Fecha] - [Tu nombre o equipo]</td>
+                        <td class="border border-sky-950 p-2">[Fecha] - [Tu nombre o equipo]</td>
+                    </tr>
+                    <tr>
+                        <td class="border border-sky-950 p-2 font-bold">Prerequisitos</td>
+                        <td class="border border-sky-950 p-2">Usuario en la página de registro.</td>
+                        <td class="border border-sky-950 p-2">Usuario autenticado con permisos para crear propiedades.</td>
+                    </tr>
+                    <tr>
+                        <td class="border border-sky-950 p-2 font-bold">Estado del software</td>
+                        <td class="border border-sky-950 p-2">El formulario de registro está disponible.</td>
+                        <td class="border border-sky-950 p-2">El módulo de creación de propiedades está en funcionamiento.</td>
+                    </tr>
+                    <tr>
+                        <td class="border border-sky-950 p-2 font-bold">Datos de prueba</td>
+                        <td class="border border-sky-950 p-2">
+                            <ul class="list-disc list-inside">
+                                <li><strong>Datos de entrada:</strong> Información válida y no válida en el formulario de registro.</li>
+                                <li><strong>Datos de salida:</strong> Mensajes de error apropiados para entradas inválidas y confirmación de registro para entradas válidas.</li>
+                            </ul>
+                        </td>
+                        <td class="border border-sky-950 p-2">
+                            <ul class="list-disc list-inside">
+                                <li><strong>Datos de entrada:</strong> Datos válidos e inválidos para la creación de propiedades.</li>
+                                <li><strong>Datos de salida:</strong> Confirmación de creación o mensajes de error.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="border border-sky-950 p-2 font-bold">Pasos</td>
+                        <td class="border border-sky-950 p-2">
+                            <ol class="list-decimal list-inside">
+                                <li>Completar el formulario de registro con datos válidos.</li>
+                                <li>Enviar el formulario.</li>
+                                <li>Verificar que se muestra un mensaje de confirmación de registro exitoso.</li>
+                                <li>Completar el formulario con datos inválidos.</li>
+                                <li>Enviar el formulario y verificar que se muestran mensajes de error claros.</li>
+                            </ol>
+                        </td>
+                        <td class="border border-sky-950 p-2">
+                            <ol class="list-decimal list-inside">
+                                <li>Enviar una solicitud para crear una propiedad con datos válidos.</li>
+                                <li>Verificar que el sistema devuelva una confirmación de creación exitosa.</li>
+                                <li>Enviar una solicitud con datos inválidos.</li>
+                                <li>Verificar que el sistema devuelva mensajes de error adecuados.</li>
+                            </ol>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="border border-sky-950 p-2 font-bold">Puntos de validación</td>
+                        <td class="border border-sky-950 p-2">
+                            <ul class="list-disc list-inside">
+                                <li>Verificar que los mensajes de error sean precisos y claros.</li>
+                                <li>Asegurarse de que la confirmación de registro se muestre correctamente al ingresar datos válidos.</li>
+                            </ul>
+                        </td>
+                        <td class="border border-sky-950 p-2">
+                            <ul class="list-disc list-inside">
+                                <li>Verificar que las propiedades se creen correctamente en la base de datos con datos válidos.</li>
+                                <li>Asegurarse de que los mensajes de error sean precisos y útiles para la corrección de entradas inválidas.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>      
         </div>
+        <div id="linea3">
+            <table class="w-full table-auto border-collapse border border-sky-950">
+                <thead>
+                    <tr class="bg-gradient-to-r from-sky-300 to-sky-600 text-white">
+                        <th class="border border-sky-950 p-2"></th>
+                        <th class="font-bold border border-sky-950 p-2">FrontEnd</th>
+                        <th class="font-bold border border-sky-950 p-2">BackEnd</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="border border-sky-950 p-2 font-bold">Identificador</td>
+                        <td class="border border-sky-950 p-2">FE-02-1</td>
+                        <td class="border border-sky-950 p-2">BE-02-1</td>
+                    </tr>
+                    <tr>
+                        <td class="border border-sky-950 p-2 font-bold">Nombre corto</td>
+                        <td class="border border-sky-950 p-2">Filtrado de propiedades por ubicación</td>
+                        <td class="border border-sky-950 p-2">Procesamiento de pagos</td>
+                    </tr>
+                    <tr>
+                        <td class="border border-sky-950 p-2 font-bold">Descripción</td>
+                        <td class="border border-sky-950 p-2">Verificar que el sistema de filtrado de propiedades por ubicación funcione correctamente en la interfaz de usuario.</td>
+                        <td class="border border-sky-950 p-2">Verificar que el sistema procesa correctamente los pagos realizados por los arrendadores y actualiza el estado de la solicitud de arriendo.</td>
+                    </tr>
+                    <tr>
+                        <td class="border border-sky-950 p-2 font-bold">Fecha y autor de creación</td>
+                        <td class="border border-sky-950 p-2">[Fecha] - [Tu nombre o equipo]</td>
+                        <td class="border border-sky-950 p-2">[Fecha] - [Tu nombre o equipo]</td>
+                    </tr>
+                    <tr>
+                        <td class="border border-sky-950 p-2 font-bold">Prerequisitos</td>
+                        <td class="border border-sky-950 p-2">Usuario autenticado en la página de búsqueda de propiedades.</td>
+                        <td class="border border-sky-950 p-2">Usuario autenticado con una solicitud de arriendo en estado "por pagar".</td>
+                    </tr>
+                    <tr>
+                        <td class="border border-sky-950 p-2 font-bold">Estado del software</td>
+                        <td class="border border-sky-950 p-2">El filtro de búsqueda está disponible y funcional.</td>
+                        <td class="border border-sky-950 p-2">El módulo de procesamiento de pagos está operativo.</td>
+                    </tr>
+                    <tr>
+                        <td class="border border-sky-950 p-2 font-bold">Datos de prueba</td>
+                        <td class="border border-sky-950 p-2">
+                            <ul class="list-disc list-inside">
+                                <li><strong>Datos de entrada:</strong> Ubicaciones específicas para filtrar propiedades (por ejemplo, "Madrid", "Barcelona").</li>
+                                <li><strong>Datos de salida:</strong> Lista de propiedades que coinciden con la ubicación seleccionada.</li>
+                            </ul>
+                        </td>
+                        <td class="border border-sky-950 p-2">
+                            <ul class="list-disc list-inside">
+                                <li><strong>Datos de entrada:</strong> Información de pago válida (monto, banco, número de cuenta).</li>
+                                <li><strong>Datos de salida:</strong> Confirmación de pago y actualización del estado de la solicitud en la base de datos.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="border border-sky-950 p-2 font-bold">Pasos</td>
+                        <td class="border border-sky-950 p-2">
+                            <ol class="list-decimal list-inside">
+                                <li>Iniciar sesión y acceder a la página de búsqueda de propiedades.</li>
+                                <li>Introducir una ubicación específica en el filtro de búsqueda.</li>
+                                <li>Aplicar el filtro y revisar los resultados.</li>
+                            </ol>
+                        </td>
+                        <td class="border border-sky-950 p-2">
+                            <ol class="list-decimal list-inside">
+                                <li>Iniciar sesión y acceder a la página de solicitudes de arriendo.</li>
+                                <li>Seleccionar una solicitud en estado "por pagar" y proceder al pago.</li>
+                                <li>Completar la información de pago y enviar la solicitud.</li>
+                                <li>Verificar que el sistema procese el pago correctamente y actualice el estado de la solicitud a "pagada".</li>
+                            </ol>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="border border-sky-950 p-2 font-bold">Puntos de validación</td>
+                        <td class="border border-sky-950 p-2">
+                            <ul class="list-disc list-inside">
+                                <li>Verificar que la lista de propiedades mostradas coincide con la ubicación seleccionada.</li>
+                                <li>Asegurarse de que no aparezcan propiedades fuera de la ubicación especificada.</li>
+                            </ul>
+                        </td>
+                        <td class="border border-sky-950 p-2">
+                            <ul class="list-disc list-inside">
+                                <li>Comprobar que la confirmación de pago sea recibida y que el estado de la solicitud se actualice en la base de datos.</li>
+                                <li>Verificar que el sistema maneje correctamente errores en el procesamiento del pago y devuelva mensajes de error adecuados si es necesario.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <h2><a href="#contenidos" class="text-blue-600 hover:underline">--VOLVER A CONTENIDOS DE LA PÁGINA--</a></h2>
+        
+        <h1 class="text-4xl font-extrabold text-gray-800 mb-4">Pruebas de carga con JMeter</h1>
+
+        <div id="pruebasJmeter" class="flex-col w-fit items-center p-4 rounded-lg shadow-sm space-y-4">
+           
+            <h1 class="text-3xl font-semibold mb-2">ENDPOINT #1</h1>
+           
+            <div id="endpoint1" class="text-gray-800 space-y-6 bg-gradient-to-r from-sky-300 to-sky-600 border-gray-300">
+                <h1 class="text-2xl font-medium mb-2">Método get</h1>
+                <p class="text-sm">Se probó el endpoint /arrendadores del controlador de arrendador</p>
+               
+                <img th:src="@{/img/JM/JM metodo get.png}" alt="imagen configuración endpoint" class="w-24 h-24 object-cover rounded-full mr-4">
+                
+                <h2 class="text-xl font-light mb-2">Prueba con 5 hilos</h2>
+                <img th:src="@{/img/JM/JM tabla 5 hilos.png}" alt="imagen configuración endpoint" class="w-24 h-24 object-cover rounded-full mr-4">
+                <img th:src="@{/img/JM/JM grafico 5 hilos.png}" alt="imagen configuración endpoint" class="w-24 h-24 object-cover rounded-full mr-4">
+                
+                <h2 class="text-xl font-light mb-2">Prueba con 10 hilos</h2>
+                <img th:src="@{/img/JM/JM tabla 10 hilos.png}" alt="imagen configuración endpoint" class="w-24 h-24 object-cover rounded-full mr-4">
+                <img th:src="@{/img/JM/JM grafico 10 hilos.png}" alt="imagen configuración endpoint" class="w-24 h-24 object-cover rounded-full mr-4">
+   
+                <h2 class="text-xl font-light mb-2">Prueba con 100 hilos</h2>
+                <img th:src="@{/img/JM/JM tabla 100 hilos.png}" alt="imagen configuración endpoint" class="w-24 h-24 object-cover rounded-full mr-4">
+                <img th:src="@{/img/JM/JM grafico 100 hilos.png}" alt="imagen configuración endpoint" class="w-24 h-24 object-cover rounded-full mr-4">
+   
+                <h2 class="text-xl font-light mb-2">Prueba con 1000 hilos</h2>
+                <img th:src="@{/img/JM/JM tabla 1000 hilos.png}" alt="imagen configuración endpoint" class="w-24 h-24 object-cover rounded-full mr-4">
+                <img th:src="@{/img/JM/JM grafico 1000 hilos.png}" alt="imagen configuración endpoint" class="w-24 h-24 object-cover rounded-full mr-4">
+   
+            </div>
+
+            <h1 class="text-3xl font-semibold mb-2">ENDPOINT #2</h1>
+            <div id="endopoint2"  class="text-gray-800 space-y-6 bg-gradient-to-r from-sky-300 to-sky-600 border-gray-300">
+                <h1 class="text-2xl font-medium mb-2">Método post</h1>
+                <p class="text-sm">Se probó el endpoint /crearArrendador del controlador de arrendador</p>
+               
+                <img th:src="@{/img/JM/JM metodo post.png}" alt="imagen configuración endpoint" class="w-24 h-24 object-cover rounded-full mr-4">
+                
+                <h2 class="text-xl font-light mb-2">Prueba con 5 hilos</h2>
+                <img th:src="@{/img/JM/JM2 tabla 5 hilos.png}" alt="imagen configuración endpoint" class="w-24 h-24 object-cover rounded-full mr-4">
+                <img th:src="@{/img/JM/JM2 grafico 5 hilos.png}" alt="imagen configuración endpoint" class="w-24 h-24 object-cover rounded-full mr-4">
+                
+                <h2 class="text-xl font-light mb-2">Prueba con 10 hilos</h2>
+                <img th:src="@{/img/JM/JM2 tabla 10 hilos.png}" alt="imagen configuración endpoint" class="w-24 h-24 object-cover rounded-full mr-4">
+                <img th:src="@{/img/JM/JM grafico 10 hilos.png}" alt="imagen configuración endpoint" class="w-24 h-24 object-cover rounded-full mr-4">
+   
+                <h2 class="text-xl font-light mb-2">Prueba con 100 hilos</h2>
+                <img th:src="@{/img/JM/JM2 tabla 100 hilos.png}" alt="imagen configuración endpoint" class="w-24 h-24 object-cover rounded-full mr-4">
+                <img th:src="@{/img/JM/JM2 grafico 100 hilos.png}" alt="imagen configuración endpoint" class="w-24 h-24 object-cover rounded-full mr-4">
+   
+                <h2 class="text-xl font-light mb-2">Prueba con 1000 hilos</h2>
+                <img th:src="@{/img/JM/JM2 tabla 1000 hilos.png}" alt="imagen configuración endpoint" class="w-24 h-24 object-cover rounded-full mr-4">
+                <img th:src="@{/img/JM/JM2 grafico 1000 hilos.png}" alt="imagen configuración endpoint" class="w-24 h-24 object-cover rounded-full mr-4">
+   
+            </div>
+            
+                
+        </div>
+        
+        <h2><a href="#contenidos" class="text-blue-600 hover:underline">--VOLVER A CONTENIDOS DE LA PÁGINA--</a></h2>
+        
+        <h1 class="text-xl font-extrabold text-gray-800 mb-4">Pruebas con Sonarqube</h1>
+
+    </div>
+
+    
+
 </body>
 
 </html>

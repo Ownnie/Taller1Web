@@ -39,346 +39,230 @@
         <div
             class="bg-gradient-to-r from-sky-300 to-sky-600 relative w-full max-w-4xl h-auto flex rounded-xl shadow-lg overflow-hidden">
             <div class="flex flex-col p-6 w-1/2 h-auto">
-                <h3 class="text-2xl font-extrabold text-gray-800 mb-4">1. Crear Cuenta de Usuario Arrendatario </h3>
-                <ul class="mt-6 list-inside list-disc pl-5 space-y-4">
-                    <li class="flex items-center gap-2"> <svg xmlns="http://www.w3.org/2000/svg" fill="none"
-                            viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-cyan-700">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
-                        </svg>
-                        Método HTTP: POST</li>
-                    <li class="flex items-center gap-2"> <svg xmlns="http://www.w3.org/2000/svg" fill="none"
-                            viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-cyan-700">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
-                        </svg>
-                        URL: /api/arrendatarios</li>
-                    <li class="flex items-center gap-2"> <svg xmlns="http://www.w3.org/2000/svg" fill="none"
-                            viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-cyan-700">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
-                        </svg>
-                        Descripción: Permite a un usuario arrendatario crear una cuenta en el sistema. </li>
-                    <li class="flex items-center gap-2"> <svg xmlns="http://www.w3.org/2000/svg" fill="none"
-                            viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-cyan-700">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
-                        </svg>
-                        Parametros:
-                        <ul class="mt-6 list-inside list-disc pl-5 space-y-4">
-                            <li class="flex items-center gap-2"> <svg xmlns="http://www.w3.org/2000/svg" fill="none"
-                                    viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-                                    class="w-6 h-6 text-cyan-700">
-                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
-                                </svg>
-                                nombres (string, requerido) </li>
-                            <li class="flex items-center gap-2"> <svg xmlns="http://www.w3.org/2000/svg" fill="none"
-                                    viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-                                    class="w-6 h-6 text-cyan-700">
-                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
-                                </svg>
-                                apellidos (string, requerido) </li>
-                            <li class="flex items-center gap-2"> <svg xmlns="http://www.w3.org/2000/svg" fill="none"
-                                    viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-                                    class="w-6 h-6 text-cyan-700">
-                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
-                                </svg>
-                                correo (string, requerido) </li>
-                            <li class="flex items-center gap-2"> <svg xmlns="http://www.w3.org/2000/svg" fill="none"
-                                    viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-                                    class="w-6 h-6 text-cyan-700">
-                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
-                                </svg>
-                                teléfono (string, opcional) </li>
-                            <li class="flex items-center gap-2"> <svg xmlns="http://www.w3.org/2000/svg" fill="none"
-                                    viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-                                    class="w-6 h-6 text-cyan-700">
-                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
-                                </svg>
-                                contraseña (string, requerido) </li>
-                        </ul>
-                    </li>
-                    <li class="flex items-center gap-2"> <svg xmlns="http://www.w3.org/2000/svg" fill="none"
-                            viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-cyan-700">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
-                        </svg>
-                        Respuesta: Confirmación de la creación de la cuenta y un enlace
-                        para activar la cuenta. </li>
-                </ul>
+                <h3 class="text-2xl font-extrabold text-gray-800 mb-4">1. Crear Cuenta de Usuario Arrendatario</h3>
+                <table class="table-auto w-full border border-sky-950">
+                    <thead>
+                        <tr class="bg-gradient-to-r from-sky-800 to-sky-950 text-gray-800">
+                            <th class="p-4 font-bold">Detalles</th>
+                            <th class="p-4 font-bold">Descripción</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="border-b">
+                            <td class="font-bold pr-4 border-r border-sky-950 p-2">Método HTTP:</td>
+                            <td class="p-2">POST</td>
+                        </tr>
+                        <tr class="border-b">
+                            <td class="font-bold pr-4 border-r border-sky-950 p-2">URL:</td>
+                            <td class="p-2">/api/arrendatarios</td>
+                        </tr>
+                        <tr class="border-b">
+                            <td class="font-bold pr-4 border-r border-sky-950 p-2">Descripción:</td>
+                            <td class="p-2">Permite a un usuario arrendatario crear una cuenta en el sistema.</td>
+                        </tr>
+                        <tr class="border-b">
+                            <td class="font-bold pr-4 border-r border-sky-950 p-2">Parámetros:</td>
+                            <td class="p-2">
+                                <ul class="list-inside list-disc pl-5 space-y-2">
+                                    <li>nombres (string, requerido)</li>
+                                    <li>apellidos (string, requerido)</li>
+                                    <li>correo (string, requerido)</li>
+                                    <li>teléfono (string, opcional)</li>
+                                    <li>contraseña (string, requerido)</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="font-bold pr-4 border-r border-sky-950 p-2">Respuesta:</td>
+                            <td class="p-2">Confirmación de la creación de la cuenta y un enlace para activar la cuenta.</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
+            
             <div class="w-1/2 h-auto">
                 <img th:src="@{/img/createAccIMG2.jpg}" alt="Imagen relleno 1" class="w-full h-full object-cover">
             </div>
         </div>
-        <div
-            class="bg-gradient-to-r from-sky-300 to-sky-600 relative w-full max-w-4xl h-auto flex rounded-xl shadow-lg overflow-hidden">
+
+        <div class="bg-gradient-to-r from-sky-300 to-sky-600 relative w-full max-w-4xl h-auto flex rounded-xl shadow-lg overflow-hidden">
             <div class="flex flex-col p-6 w-1/2 h-auto">
-                <h3 class="text-2xl font-extrabold text-gray-800 mb-4">2. Activar Cuenta de Usuario Arrendatario </h3>
-                <ul class="mt-6 list-inside list-disc pl-5 space-y-4">
-                    <li class="flex items-center gap-2"> <svg xmlns="http://www.w3.org/2000/svg" fill="none"
-                            viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-cyan-700">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
-                        </svg>
-                        Método HTTP: GET</li>
-                    <li class="flex items-center gap-2"> <svg xmlns="http://www.w3.org/2000/svg" fill="none"
-                            viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-cyan-700">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
-                        </svg>
-                        URL: /api/arrendatarios/activar/{token}</li>
-                    <li class="flex items-center gap-2"> <svg xmlns="http://www.w3.org/2000/svg" fill="none"
-                            viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-cyan-700">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
-                        </svg>
-                        Descripción: Activa la cuenta de un usuario arrendatario
-                        mediante un token enviado por correo electrónico. </li>
-                    <li class="flex items-center gap-2"> <svg xmlns="http://www.w3.org/2000/svg" fill="none"
-                            viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-cyan-700">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
-                        </svg>
-                        Parametros:
-                        <ul class="mt-6 list-inside list-disc pl-5 space-y-4">
-                            <li class="flex items-center gap-2"> <svg xmlns="http://www.w3.org/2000/svg" fill="none"
-                                    viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-                                    class="w-6 h-6 text-cyan-700">
-                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
-                                </svg>
-                                token (string, requerido) </li>
-                        </ul>
-                    </li>
-                    <li class="flex items-center gap-2"> <svg xmlns="http://www.w3.org/2000/svg" fill="none"
-                            viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-cyan-700">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
-                        </svg>
-                        Respuesta: Confirmación de la activación de la cuenta </li>
-                </ul>
+                <h3 class="text-2xl font-extrabold text-gray-800 mb-4">2. Activar Cuenta de Usuario Arrendatario</h3>
+                <table class="table-auto w-full border border-sky-950">
+                    <thead>
+                        <tr class="bg-gradient-to-r from-sky-800 to-sky-950 text-gray-800">
+                            <th class="p-4 font-bold">Detalles</th>
+                            <th class="p-4 font-bold">Descripción</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="border-b">
+                            <td class="font-bold pr-4 border-r border-sky-950 p-2">Método HTTP:</td>
+                            <td class="p-2">GET</td>
+                        </tr>
+                        <tr class="border-b">
+                            <td class="font-bold pr-4 border-r border-sky-950 p-2">URL:</td>
+                            <td class="p-2">/api/arrendatarios/activar/{token}</td>
+                        </tr>
+                        <tr class="border-b">
+                            <td class="font-bold pr-4 border-r border-sky-950 p-2">Descripción:</td>
+                            <td class="p-2">Activa la cuenta de un usuario arrendatario mediante un token enviado por correo electrónico.</td>
+                        </tr>
+                        <tr class="border-b">
+                            <td class="font-bold pr-4 border-r border-sky-950 p-2">Parámetros:</td>
+                            <td class="p-2">
+                                <ul class="list-inside list-disc pl-5 space-y-2">
+                                    <li>token (string, requerido)</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="font-bold pr-4 border-r border-sky-950 p-2">Respuesta:</td>
+                            <td class="p-2">Confirmación de la activación de la cuenta.</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                
             </div>
             <div class="w-1/2 h-auto">
                 <img th:src="@{/img/checkAcc.png}" alt="Imagen relleno 1" class="w-full h-full object-cover">
             </div>
         </div>
+        
         <div
             class="bg-gradient-to-r from-sky-300 to-sky-600 relative w-full max-w-4xl h-auto flex rounded-xl shadow-lg overflow-hidden">
             <div class="flex flex-col p-6 w-1/2 h-auto">
-                <h3 class="text-2xl font-extrabold text-gray-800 mb-4">3. Autenticar Usuario Arrendatario </h3>
-                <ul class="mt-6 list-inside list-disc pl-5 space-y-4">
-                    <li class="flex items-center gap-2"> <svg xmlns="http://www.w3.org/2000/svg" fill="none"
-                            viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-cyan-700">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
-                        </svg>
-                        Método HTTP: POST</li>
-                    <li class="flex items-center gap-2"> <svg xmlns="http://www.w3.org/2000/svg" fill="none"
-                            viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-cyan-700">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
-                        </svg>
-                        URL: /api/arrendatarios/auth</li>
-                    <li class="flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" fill="none"
-                            viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-cyan-700">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
-                        </svg>
-                        Descripción: Autentica a un usuario arrendatario y proporciona
-                        un token de acceso </li>
-                    <li class="flex items-center gap-2"> <svg xmlns="http://www.w3.org/2000/svg" fill="none"
-                            viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-cyan-700">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
-                        </svg>
-                        Parametros:
-                        <ul class="mt-6 list-inside list-disc pl-5 space-y-4">
-                            <li class="flex items-center gap-2"> <svg xmlns="http://www.w3.org/2000/svg" fill="none"
-                                    viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-                                    class="w-6 h-6 text-cyan-700">
-                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
-                                </svg>
-                                correo (string, requerido) </li>
-                            <li class="flex items-center gap-2"> <svg xmlns="http://www.w3.org/2000/svg" fill="none"
-                                    viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-                                    class="w-6 h-6 text-cyan-700">
-                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
-                                </svg>
-                                contraseña (string, requerido) </li>
-                        </ul>
-                    </li>
-                    <li class="flex items-center gap-2"> <svg xmlns="http://www.w3.org/2000/svg" fill="none"
-                            viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-cyan-700">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
-                        </svg>
-                        Respuesta: Token de acceso y detalles del usuario</li>
-                </ul>
+                <h3 class="text-2xl font-extrabold text-gray-800 mb-4">3. Autenticar Usuario Arrendatario</h3>
+                <table class="table-auto w-full border border-sky-950">
+                    <thead>
+                        <tr class="bg-gradient-to-r from-sky-800 to-sky-950 text-gray-800">
+                            <th class="p-4 font-bold">Detalles</th>
+                            <th class="p-4 font-bold">Descripción</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="border-b">
+                            <td class="font-bold pr-4 border-r border-sky-950 p-2">Método HTTP:</td>
+                            <td class="p-2">POST</td>
+                        </tr>
+                        <tr class="border-b">
+                            <td class="font-bold pr-4 border-r border-sky-950 p-2">URL:</td>
+                            <td class="p-2">/api/arrendatarios/auth</td>
+                        </tr>
+                        <tr class="border-b">
+                            <td class="font-bold pr-4 border-r border-sky-950 p-2">Descripción:</td>
+                            <td class="p-2">Autentica a un usuario arrendatario y proporciona un token de acceso</td>
+                        </tr>
+                        <tr class="border-b">
+                            <td class="font-bold pr-4 border-r border-sky-950 p-2">Parámetros:</td>
+                            <td class="p-2">
+                                <ul class="list-inside list-disc pl-5 space-y-2">
+                                    <li>correo (string, requerido)</li>
+                                    <li>contraseña (string, requerido)</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="font-bold pr-4 border-r border-sky-950 p-2">Respuesta:</td>
+                            <td class="p-2">Token de acceso y detalles del usuario</td>
+                        </tr>
+                    </tbody>
+                </table>
+
             </div>
+
             <div class="w-1/2 h-auto">
                 <img th:src="@{/img/authAcc2.jpg}" alt="Imagen relleno 1" class="w-full h-full object-cover">
             </div>
         </div>
+
         <div
             class="bg-gradient-to-r from-sky-300 to-sky-600 relative w-full max-w-4xl h-auto flex rounded-xl shadow-lg overflow-hidden">
-            <div class="flex flex-col p-6 w-1/2 h-auto">
-                <h3 class="text-2xl font-extrabold text-gray-800 mb-4">4. Buscar Propiedades </h3>
-                <ul class="mt-6 list-inside list-disc pl-5 space-y-4">
-                    <li class="flex items-center gap-2">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor" class="w-6 h-6 text-cyan-700">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
-                        </svg>
-                        Método HTTP: GET
-                    </li>
-                    <li class="flex items-center gap-2">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor" class="w-6 h-6 text-cyan-700">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
-                        </svg>
-                        URL: /api/propiedades
-                    </li>
-                    <li class="flex items-center gap-2">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor" class="w-6 h-6 text-cyan-700">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
-                        </svg>
-                        Descripción: Permite a un usuario arrendatario buscar
-                        propiedades disponibles.
-                    </li>
-                    <li class="flex items-center gap-2">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor" class="w-6 h-6 text-cyan-700">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
-                        </svg>
-                        Parametros (query parameters):
-                        <ul class="mt-6 list-inside list-disc pl-5 space-y-4">
-                            <li class="flex items-center gap-2">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-cyan-700">
-                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
-                                </svg>
-                                nombres (string, opcional)
-                            </li>
-                            <li class="flex items-center gap-2">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-cyan-700">
-                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
-                                </svg>
-                                municipio (string, opcional)
-                            </li>
-                            <li class="flex items-center gap-2">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-cyan-700">
-                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
-                                </svg>
-                                cantidad_personas (int, opcional)
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="flex items-center gap-2">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor" class="w-6 h-6 text-cyan-700">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
-                        </svg>
-                        Respuesta: Listado de propiedades que coinciden con los
-                        criterios de búsqueda.
-                    </li>
-                </ul>
+                <div class="flex flex-col p-6 w-1/2 h-auto">
+                    <h3 class="text-2xl font-extrabold text-gray-800 mb-4">4. Buscar Propiedades</h3>
+                    <table class="table-auto w-full border border-sky-950">
+                        <thead>
+                            <tr class="bg-gradient-to-r from-sky-800 to-sky-950 text-gray-800">
+                                <th class="p-4 font-bold">Detalles</th>
+                                <th class="p-4 font-bold">Descripción</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="border-b">
+                                <td class="font-bold pr-4 border-r border-sky-950 p-2">Método HTTP:</td>
+                                <td class="p-2">GET</td>
+                            </tr>
+                            <tr class="border-b">
+                                <td class="font-bold pr-4 border-r border-sky-950 p-2">URL:</td>
+                                <td class="p-2">/api/propiedades</td>
+                            </tr>
+                            <tr class="border-b">
+                                <td class="font-bold pr-4 border-r border-sky-950 p-2">Descripción:</td>
+                                <td class="p-2">Permite a un usuario arrendatario buscar propiedades disponibles.</td>
+                            </tr>
+                            <tr class="border-b">
+                                <td class="font-bold pr-4 border-r border-sky-950 p-2">Parámetros:</td>
+                                <td class="p-2">
+                                    <ul class="list-inside list-disc pl-5 space-y-2">
+                                        <li>nombre (string, opcional)</li>
+                                        <li>municipio (string, opcional)</li>
+                                        <li>cantidad_personas (int, opcional)</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="font-bold pr-4 border-r border-sky-950 p-2">Respuesta:</td>
+                                <td class="p-2">Listado de propiedades que coinciden con los criterios de búsqueda.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="w-1/2 h-auto">
+                    <img th:src="@{/img/searchProp.jpg}" alt="Imagen relleno 1" class="w-full h-full object-cover">
+                </div>    
             </div>
-            <div class="w-1/2 h-auto">
-                <img th:src="@{/img/searchProp.jpg}" alt="Imagen relleno 1" class="w-full h-full object-cover">
-            </div>
-        </div>
+
         <div
             class="bg-gradient-to-r from-sky-300 to-sky-600 relative w-full max-w-4xl h-auto flex rounded-xl shadow-lg overflow-hidden">
             <div class="flex flex-col p-6 w-1/2 h-auto">
                 <h3 class="text-2xl font-extrabold text-gray-800 mb-4">5. Solicitar Arrendamiento</h3>
-                <ul class="mt-6 list-inside list-disc pl-5 space-y-4">
-                    <li class="flex items-center gap-2">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor" class="w-6 h-6 text-cyan-700">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
-                        </svg>
-                        Método HTTP: POST
-                    </li>
-                    <li class="flex items-center gap-2">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor" class="w-6 h-6 text-cyan-700">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
-                        </svg>
-                        URL: /api/arrendamientos
-                    </li>
-                    <li class="flex items-center gap-2">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor" class="w-6 h-6 text-cyan-700">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
-                        </svg>
-                        Descripción: Permite a un usuario arrendatario solicitar el
-                        arrendamiento de una propiedad.
-                    </li>
-                    <li class="flex items-center gap-2">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor" class="w-6 h-6 text-cyan-700">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
-                        </svg>
-                        Parametros:
-                        <ul class="mt-6 list-inside list-disc pl-5 space-y-4">
-                            <li class="flex items-center gap-2">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-cyan-700">
-                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
-                                </svg>
-                                propiedad_id (int, requerido)
-                            </li>
-                            <li class="flex items-center gap-2">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-cyan-700">
-                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
-                                </svg>
-                                fecha_inicio (date, requerido)
-                            </li>
-                            <li class="flex items-center gap-2">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-cyan-700">
-                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
-                                </svg>
-                                fecha_fin (date, requerido)
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="flex items-center gap-2">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor" class="w-6 h-6 text-cyan-700">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
-                        </svg>
-                        Respuesta: Confirmación de la solicitud de arrendamiento
-                    </li>
-                </ul>
+                <table class="table-auto w-full border border-sky-950">
+                    <thead>
+                        <tr class="bg-gradient-to-r from-sky-800 to-sky-950 text-gray-800">
+                            <th class="p-4 font-bold">Detalles</th>
+                            <th class="p-4 font-bold">Descripción</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="border-b">
+                            <td class="font-bold pr-4 border-r border-sky-950 p-2">Método HTTP:</td>
+                            <td class="p-2">POST</td>
+                        </tr>
+                        <tr class="border-b">
+                            <td class="font-bold pr-4 border-r border-sky-950 p-2">URL:</td>
+                            <td class="p-2">/api/arrendamientos</td>
+                        </tr>
+                        <tr class="border-b">
+                            <td class="font-bold pr-4 border-r border-sky-950 p-2">Descripción:</td>
+                            <td class="p-2">Permite a un usuario arrendatario solicitar el arrendamiento de una propiedad.</td>
+                        </tr>
+                        <tr class="border-b">
+                            <td class="font-bold pr-4 border-r border-sky-950 p-2">Parámetros:</td>
+                            <td class="p-2">
+                                <ul class="list-inside list-disc pl-5 space-y-2">
+                                    <li>propiedad_id (int, requerido)</li>
+                                    <li>fecha_inicio (date, requerido)</li>
+                                    <li>fecha_fin (date, requerido)</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="font-bold pr-4 border-r border-sky-950 p-2">Respuesta:</td>
+                            <td class="p-2">Confirmación de la solicitud de arrendamiento.</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
             <div class="w-1/2 h-auto">
                 <img th:src="@{/img/askProp.jpg}" alt="Imagen relleno 1" class="w-full h-full object-cover">
@@ -389,94 +273,47 @@
         <div
             class="bg-gradient-to-r from-sky-300 to-sky-600 relative w-full max-w-4xl h-auto flex rounded-xl shadow-lg overflow-hidden">
             <div class="flex flex-col p-6 w-1/2 h-auto">
-                <h3 class="text-2xl font-extrabold text-gray-800 mb-4">1. Crear Cuenta de Usuario Arrendador </h3>
-                <ul class="mt-6 list-inside list-disc pl-5 space-y-4">
-                    <li class="flex items-center gap-2">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor" class="w-6 h-6 text-cyan-700">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
-                        </svg>
-                        Método HTTP: POST
-                    </li>
-                    <li class="flex items-center gap-2">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor" class="w-6 h-6 text-cyan-700">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
-                        </svg>
-                        URL: /api/arrendadores
-                    </li>
-                    <li class="flex items-center gap-2">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor" class="w-6 h-6 text-cyan-700">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
-                        </svg>
-                        Descripción: Permite a un usuario arrendador crear una cuenta
-                        en el sistema.
-                    </li>
-                    <li class="flex items-center gap-2">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor" class="w-6 h-6 text-cyan-700">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
-                        </svg>
-                        Parametros:
-                        <ul class="mt-6 list-inside list-disc pl-5 space-y-4">
-                            <li class="flex items-center gap-2">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-cyan-700">
-                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
-                                </svg>
-                                nombres (string, requerido)
-                            </li>
-                            <li class="flex items-center gap-2">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-cyan-700">
-                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
-                                </svg>
-                                apellidos (string, requerido)
-                            </li>
-                            <li class="flex items-center gap-2">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-cyan-700">
-                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
-                                </svg>
-                                correo (string, requerido)
-                            </li>
-                            <li class="flex items-center gap-2">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-cyan-700">
-                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
-                                </svg>
-                                teléfono (string, opcional)
-                            </li>
-                            <li class="flex items-center gap-2">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-cyan-700">
-                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
-                                </svg>
-                                contraseña (string, requerido)
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="flex items-center gap-2">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor" class="w-6 h-6 text-cyan-700">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
-                        </svg>
-                        Respuesta: Confirmación de la creación de la cuenta y un enlace
-                        para activar la cuenta.
-                    </li>
-                </ul>
+                <h3 class="text-2xl font-extrabold text-gray-800 mb-4">1. Crear Cuenta de Usuario Arrendador</h3>
+                <table class="table-auto w-full border border-sky-950">
+                    <thead>
+                        <tr class="bg-gradient-to-r from-sky-800 to-sky-950 text-gray-800">
+                            <th class="p-4 font-bold">Detalles</th>
+                            <th class="p-4 font-bold">Descripción</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="border-b">
+                            <td class="font-bold pr-4 border-r border-sky-950 p-2">Método HTTP:</td>
+                            <td class="p-2">POST</td>
+                        </tr>
+                        <tr class="border-b">
+                            <td class="font-bold pr-4 border-r border-sky-950 p-2">URL:</td>
+                            <td class="p-2">/api/arrendadores</td>
+                        </tr>
+                        <tr class="border-b">
+                            <td class="font-bold pr-4 border-r border-sky-950 p-2">Descripción:</td>
+                            <td class="p-2">Permite a un usuario arrendador crear una cuenta en el sistema.</td>
+                        </tr>
+                        <tr class="border-b">
+                            <td class="font-bold pr-4 border-r border-sky-950 p-2">Parámetros:</td>
+                            <td class="p-2">
+                                <ul class="list-inside list-disc pl-5 space-y-2">
+                                    <li>nombres (string, requerido)</li>
+                                    <li>apellidos (string, requerido)</li>
+                                    <li>correo (string, requerido)</li>
+                                    <li>teléfono (string, opcional)</li>
+                                    <li>contraseña (string, requerido)</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="font-bold pr-4 border-r border-sky-950 p-2">Respuesta:</td>
+                            <td class="p-2">Confirmación de la creación de la cuenta y un enlace para activar la cuenta.</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
+            
             <div class="w-1/2 h-auto">
                 <img th:src="@{/img/createAccIMG2.jpg}" alt="Imagen relleno 1" class="w-full h-full object-cover">
             </div>
@@ -484,61 +321,43 @@
         <div
             class="bg-gradient-to-r from-sky-300 to-sky-600 relative w-full max-w-4xl h-auto flex rounded-xl shadow-lg overflow-hidden">
             <div class="flex flex-col p-6 w-1/2 h-auto">
-                <h3 class="text-2xl font-extrabold text-gray-800 mb-4">2. Activar Cuenta de Usuario Arrendador </h3>
-                <ul class="mt-6 list-inside list-disc pl-5 space-y-4">
-                    <li class="flex items-center gap-2">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor" class="w-6 h-6 text-cyan-700">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
-                        </svg>
-                        Método HTTP: GET
-                    </li>
-                    <li class="flex items-center gap-2">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor" class="w-6 h-6 text-cyan-700">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
-                        </svg>
-                        URL: /api/arrendadores/activar/{token}
-                    </li>
-                    <li class="flex items-center gap-2">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor" class="w-6 h-6 text-cyan-700">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
-                        </svg>
-                        Descripción: Activa la cuenta de un usuario arrendador
-                        mediante un token enviado por correo electrónico.
-                    </li>
-                    <li class="flex items-center gap-2">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor" class="w-6 h-6 text-cyan-700">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
-                        </svg>
-                        Parametros:
-                        <ul class="mt-6 list-inside list-disc pl-5 space-y-4">
-                            <li class="flex items-center gap-2">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-cyan-700">
-                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
-                                </svg>
-                                token (string, requerido)
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="flex items-center gap-2">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor" class="w-6 h-6 text-cyan-700">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
-                        </svg>
-                        Respuesta: Confirmación de la activación de la cuenta
-                    </li>
-                </ul>
+                <h3 class="text-2xl font-extrabold text-gray-800 mb-4">2. Activar Cuenta de Usuario Arrendador</h3>
+                <table class="table-auto w-full border border-sky-950">
+                    <thead>
+                        <tr class="bg-gradient-to-r from-sky-800 to-sky-950 text-gray-800">
+                            <th class="p-4 font-bold">Detalles</th>
+                            <th class="p-4 font-bold">Descripción</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="border-b">
+                            <td class="font-bold pr-4 border-r border-sky-950 p-2">Método HTTP:</td>
+                            <td class="p-2">GET</td>
+                        </tr>
+                        <tr class="border-b">
+                            <td class="font-bold pr-4 border-r border-sky-950 p-2">URL:</td>
+                            <td class="p-2">/api/arrendadores/activar/{token}</td>
+                        </tr>
+                        <tr class="border-b">
+                            <td class="font-bold pr-4 border-r border-sky-950 p-2">Descripción:</td>
+                            <td class="p-2">Activa la cuenta de un usuario arrendador mediante un token enviado por correo electrónico.</td>
+                        </tr>
+                        <tr class="border-b">
+                            <td class="font-bold pr-4 border-r border-sky-950 p-2">Parámetros:</td>
+                            <td class="p-2">
+                                <ul class="list-inside list-disc pl-5 space-y-2">
+                                    <li>token (string, requerido)</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="font-bold pr-4 border-r border-sky-950 p-2">Respuesta:</td>
+                            <td class="p-2">Confirmación de la activación de la cuenta.</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
+            
             <div class="w-1/2 h-auto">
                 <img th:src="@{/img/checkAcc.png}" alt="Imagen relleno 1" class="w-full h-full object-cover">
             </div>
@@ -546,69 +365,44 @@
         <div
             class="bg-gradient-to-r from-sky-300 to-sky-600 relative w-full max-w-4xl h-auto flex rounded-xl shadow-lg overflow-hidden">
             <div class="flex flex-col p-6 w-1/2 h-auto">
-                <h3 class="text-2xl font-extrabold text-gray-800 mb-4">3. Autenticar Usuario Arrendador </h3>
-                <ul class="mt-6 list-inside list-disc pl-5 space-y-4">
-                    <li class="flex items-center gap-2">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor" class="w-6 h-6 text-cyan-700">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
-                        </svg>
-                        Método HTTP: POST
-                    </li>
-                    <li class="flex items-center gap-2">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor" class="w-6 h-6 text-cyan-700">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
-                        </svg>
-                        URL: /api/arrendadores/auth
-                    </li>
-                    <li class="flex items-center gap-2">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor" class="w-6 h-6 text-cyan-700">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
-                        </svg>
-                        Descripción: Autentica a un usuario arrendador y proporciona
-                        un token de acceso
-                    </li>
-                    <li class="flex items-center gap-2">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor" class="w-6 h-6 text-cyan-700">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
-                        </svg>
-                        Parametros:
-                        <ul class="mt-6 list-inside list-disc pl-5 space-y-4">
-                            <li class="flex items-center gap-2">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-cyan-700">
-                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
-                                </svg>
-                                correo (string, requerido)
-                            </li>
-                            <li class="flex items-center gap-2">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-cyan-700">
-                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
-                                </svg>
-                                contraseña (string, requerido)
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="flex items-center gap-2">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor" class="w-6 h-6 text-cyan-700">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
-                        </svg>
-                        Respuesta: Token de acceso y detalles del usuario
-                    </li>
-                </ul>
+                <h3 class="text-2xl font-extrabold text-gray-800 mb-4">3. Autenticar Usuario Arrendador</h3>
+                <table class="table-auto w-full border border-sky-950">
+                    <thead>
+                        <tr class="bg-gradient-to-r from-sky-800 to-sky-950 text-gray-800">
+                            <th class="p-4 font-bold">Detalles</th>
+                            <th class="p-4 font-bold">Descripción</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="border-b">
+                            <td class="font-bold pr-4 border-r border-sky-950 p-2">Método HTTP:</td>
+                            <td class="p-2">POST</td>
+                        </tr>
+                        <tr class="border-b">
+                            <td class="font-bold pr-4 border-r border-sky-950 p-2">URL:</td>
+                            <td class="p-2">/api/arrendadores/auth</td>
+                        </tr>
+                        <tr class="border-b">
+                            <td class="font-bold pr-4 border-r border-sky-950 p-2">Descripción:</td>
+                            <td class="p-2">Autentica a un usuario arrendador y proporciona un token de acceso.</td>
+                        </tr>
+                        <tr class="border-b">
+                            <td class="font-bold pr-4 border-r border-sky-950 p-2">Parámetros:</td>
+                            <td class="p-2">
+                                <ul class="list-inside list-disc pl-5 space-y-2">
+                                    <li>correo (string, requerido)</li>
+                                    <li>contraseña (string, requerido)</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="font-bold pr-4 border-r border-sky-950 p-2">Respuesta:</td>
+                            <td class="p-2">Token de acceso y detalles del usuario.</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
+            
             <div class="w-1/2 h-auto">
                 <img th:src="@{/img/authAcc2.jpg}" alt="Imagen relleno 1" class="w-full h-full object-cover">
             </div>
@@ -616,141 +410,53 @@
         <div
             class="bg-gradient-to-r from-sky-300 to-sky-600 relative w-full max-w-4xl h-auto flex rounded-xl shadow-lg overflow-hidden">
             <div class="flex flex-col p-6 w-1/2 h-auto">
-                <h3 class="text-2xl font-extrabold text-gray-800 mb-4">4. Crear Propiedad </h3>
-                <ul class="mt-6 list-inside list-disc pl-5 space-y-4">
-                    <li class="flex items-center gap-2">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor" class="w-6 h-6 text-cyan-700">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
-                        </svg>
-                        Método HTTP: POST
-                    </li>
-                    <li class="flex items-center gap-2">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor" class="w-6 h-6 text-cyan-700">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
-                        </svg>
-                        URL: /api/propiedades
-                    </li>
-                    <li class="flex items-center gap-2">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor" class="w-6 h-6 text-cyan-700">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
-                        </svg>
-                        Descripción: Permite a un usuario arrendador crear una nueva
-                        propiedad para arrendar.
-                    </li>
-                    <li class="flex items-center gap-2">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor" class="w-6 h-6 text-cyan-700">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
-                        </svg>
-                        Parametros:
-                        <ul class="mt-6 list-inside list-disc pl-5 space-y-4">
-                            <li class="flex items-center gap-2">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-cyan-700">
-                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
-                                </svg>
-                                nombre (string, requerido)
-                            </li>
-                            <li class="flex items-center gap-2">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-cyan-700">
-                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
-                                </svg>
-                                departamento (string, requerido)
-                            </li>
-                            <li class="flex items-center gap-2">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-cyan-700">
-                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
-                                </svg>
-                                municipio (string, requerido)
-                            </li>
-                            <li class="flex items-center gap-2">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-cyan-700">
-                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
-                                </svg>
-                                tipo_ingreso (string, requerido)
-                            </li>
-                            <li class="flex items-center gap-2">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-cyan-700">
-                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
-                                </svg>
-                                descripción (string, requerido)
-                            </li>
-                            <li class="flex items-center gap-2">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-cyan-700">
-                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
-                                </svg>
-                                cantidad_habitaciones (int, requerido)
-                            </li>
-                            <li class="flex items-center gap-2">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-cyan-700">
-                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
-                                </svg>
-                                cantidad_baños (int, requerido)
-                            </li>
-                            <li class="flex items-center gap-2">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-cyan-700">
-                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
-                                </svg>
-                                permite_mascotas (boolean, requerido)
-                            </li>
-                            <li class="flex items-center gap-2">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-cyan-700">
-                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
-                                </svg>
-                                tiene_piscina (boolean, requerido)
-                            </li>
-                            <li class="flex items-center gap-2">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-cyan-700">
-                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
-                                </svg>
-                                tiene_asador (boolean, requerido)
-                            </li>
-                            <li class="flex items-center gap-2">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-cyan-700">
-                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
-                                </svg>
-                                valor_noche (decimal, requerido)
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="flex items-center gap-2">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor" class="w-6 h-6 text-cyan-700">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
-                        </svg>
-                        Respuesta: Confirmación de la creación de la propiedad
-                    </li>
-                </ul>
+                <h3 class="text-2xl font-extrabold text-gray-800 mb-4">4. Crear Propiedad</h3>
+                <table class="table-auto w-full border border-sky-950">
+                    <thead>
+                        <tr class="bg-gradient-to-r from-sky-800 to-sky-950 text-gray-800">
+                            <th class="p-4 font-bold">Detalles</th>
+                            <th class="p-4 font-bold">Descripción</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="border-b">
+                            <td class="font-bold pr-4 border-r border-sky-950 p-2">Método HTTP:</td>
+                            <td class="p-2">POST</td>
+                        </tr>
+                        <tr class="border-b">
+                            <td class="font-bold pr-4 border-r border-sky-950 p-2">URL:</td>
+                            <td class="p-2">/api/propiedades</td>
+                        </tr>
+                        <tr class="border-b">
+                            <td class="font-bold pr-4 border-r border-sky-950 p-2">Descripción:</td>
+                            <td class="p-2">Permite a un usuario arrendador crear una nueva propiedad para arrendar.</td>
+                        </tr>
+                        <tr class="border-b">
+                            <td class="font-bold pr-4 border-r border-sky-950 p-2">Parámetros:</td>
+                            <td class="p-2">
+                                <ul class="list-inside list-disc pl-5 space-y-2">
+                                    <li>nombre (string, requerido)</li>
+                                    <li>departamento (string, requerido)</li>
+                                    <li>municipio (string, requerido)</li>
+                                    <li>tipo_ingreso (string, requerido)</li>
+                                    <li>descripción (string, requerido)</li>
+                                    <li>cantidad_habitaciones (int, requerido)</li>
+                                    <li>cantidad_baños (int, requerido)</li>
+                                    <li>permite_mascotas (boolean, requerido)</li>
+                                    <li>tiene_piscina (boolean, requerido)</li>
+                                    <li>tiene_asador (boolean, requerido)</li>
+                                    <li>valor_noche (decimal, requerido)</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="font-bold pr-4 border-r border-sky-950 p-2">Respuesta:</td>
+                            <td class="p-2">Confirmación de la creación de la propiedad.</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
+            
             <div class="w-1/2 h-auto">
                 <img th:src="@{/img/createProp.jpg}" alt="Imagen relleno 1" class="w-full h-full object-cover">
             </div>
@@ -758,149 +464,54 @@
         <div
             class="bg-gradient-to-r from-sky-300 to-sky-600 relative w-full max-w-4xl h-auto flex rounded-xl shadow-lg overflow-hidden">
             <div class="flex flex-col p-6 w-1/2 h-auto">
-                <h3 class="text-2xl font-extrabold text-gray-800 mb-4">5. Editar Propiedad </h3>
-                <ul class="mt-6 list-inside list-disc pl-5 space-y-4">
-                    <li class="flex items-center gap-2">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor" class="w-6 h-6 text-cyan-700">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
-                        </svg>
-                        Método HTTP: PUT
-                    </li>
-                    <li class="flex items-center gap-2">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor" class="w-6 h-6 text-cyan-700">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
-                        </svg>
-                        URL: /api/propiedades/{id}
-                    </li>
-                    <li class="flex items-center gap-2">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor" class="w-6 h-6 text-cyan-700">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
-                        </svg>
-                        Descripción: Permite a un usuario arrendador crear una nueva
-                        propiedad para arrendar.
-                    </li>
-                    <li class="flex items-center gap-2">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor" class="w-6 h-6 text-cyan-700">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
-                        </svg>
-                        Parametros:
-                        <ul class="mt-6 list-inside list-disc pl-5 space-y-4">
-                            <li class="flex items-center gap-2">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-cyan-700">
-                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
-                                </svg>
-                                id (int, requerido)
-                            </li>
-                            <li class="flex items-center gap-2">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-cyan-700">
-                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
-                                </svg>
-                                nombre (string, opcional)
-                            </li>
-                            <li class="flex items-center gap-2">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-cyan-700">
-                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
-                                </svg>
-                                departamento (string, opcional)
-                            </li>
-                            <li class="flex items-center gap-2">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-cyan-700">
-                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
-                                </svg>
-                                municipio (string, opcional)
-                            </li>
-                            <li class="flex items-center gap-2">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-cyan-700">
-                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
-                                </svg>
-                                tipo_ingreso (string, opcional)
-                            </li>
-                            <li class="flex items-center gap-2">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-cyan-700">
-                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
-                                </svg>
-                                descripción (string, opcional)
-                            </li>
-                            <li class="flex items-center gap-2">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-cyan-700">
-                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
-                                </svg>
-                                cantidad_habitaciones (int, opcional)
-                            </li>
-                            <li class="flex items-center gap-2">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-cyan-700">
-                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
-                                </svg>
-                                cantidad_baños (int, opcional)
-                            </li>
-                            <li class="flex items-center gap-2">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-cyan-700">
-                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
-                                </svg>
-                                permite_mascotas (boolean, opcional)
-                            </li>
-                            <li class="flex items-center gap-2">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-cyan-700">
-                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
-                                </svg>
-                                tiene_piscina (boolean, opcional)
-                            </li>
-                            <li class="flex items-center gap-2">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-cyan-700">
-                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
-                                </svg>
-                                tiene_asador (boolean, opcional)
-                            </li>
-                            <li class="flex items-center gap-2">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-cyan-700">
-                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
-                                </svg>
-                                valor_noche (decimal, opcional)
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="flex items-center gap-2">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor" class="w-6 h-6 text-cyan-700">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
-                        </svg>
-                        Respuesta: Confirmación de la actualización de la propiedad
-                    </li>
-                </ul>
+                <h3 class="text-2xl font-extrabold text-gray-800 mb-4">5. Editar Propiedad</h3>
+                <table class="table-auto w-full border border-sky-950">
+                    <thead>
+                        <tr class="bg-gradient-to-r from-sky-800 to-sky-950 text-gray-800">
+                            <th class="p-4 font-bold">Detalles</th>
+                            <th class="p-4 font-bold">Descripción</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="border-b">
+                            <td class="font-bold pr-4 border-r border-sky-950 p-2">Método HTTP:</td>
+                            <td class="p-2">PUT</td>
+                        </tr>
+                        <tr class="border-b">
+                            <td class="font-bold pr-4 border-r border-sky-950 p-2">URL:</td>
+                            <td class="p-2">/api/propiedades/{id}</td>
+                        </tr>
+                        <tr class="border-b">
+                            <td class="font-bold pr-4 border-r border-sky-950 p-2">Descripción:</td>
+                            <td class="p-2">Permite a un usuario arrendador editar una propiedad existente.</td>
+                        </tr>
+                        <tr class="border-b">
+                            <td class="font-bold pr-4 border-r border-sky-950 p-2">Parámetros:</td>
+                            <td class="p-2">
+                                <ul class="list-inside list-disc pl-5 space-y-2">
+                                    <li>id (int, requerido)</li>
+                                    <li>nombre (string, opcional)</li>
+                                    <li>departamento (string, opcional)</li>
+                                    <li>municipio (string, opcional)</li>
+                                    <li>tipo_ingreso (string, opcional)</li>
+                                    <li>descripción (string, opcional)</li>
+                                    <li>cantidad_habitaciones (int, opcional)</li>
+                                    <li>cantidad_baños (int, opcional)</li>
+                                    <li>permite_mascotas (boolean, opcional)</li>
+                                    <li>tiene_piscina (boolean, opcional)</li>
+                                    <li>tiene_asador (boolean, opcional)</li>
+                                    <li>valor_noche (decimal, opcional)</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="font-bold pr-4 border-r border-sky-950 p-2">Respuesta:</td>
+                            <td class="p-2">Confirmación de la actualización de la propiedad.</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
+            
             <div class="w-1/2 h-auto">
                 <img th:src="@{/img/editProp.jpg}" alt="Imagen relleno 1" class="w-full h-full object-cover">
             </div>
@@ -908,64 +519,43 @@
         <div
             class="bg-gradient-to-r from-sky-300 to-sky-600 relative w-full max-w-4xl h-auto flex rounded-xl shadow-lg overflow-hidden">
             <div class="flex flex-col p-6 w-1/2 h-auto">
-                <h3 class="text-2xl font-extrabold text-gray-800 mb-4">6. Ver Solicitudes de Arrendamiento </h3>
-                <ul class="mt-6 list-inside list-disc pl-5 space-y-4">
-                    <li class="flex items-center gap-2">
-
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor" class="w-6 h-6 text-cyan-700">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
-                        </svg>
-                        Método HTTP: GET
-                    </li>
-                    <li class="flex items-center gap-2">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor" class="w-6 h-6 text-cyan-700">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
-                        </svg>
-                        URL: /api/arrendamientos/solicitudes
-                    </li>
-                    <li class="flex items-center gap-2">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor" class="w-6 h-6 text-cyan-700">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
-                        </svg>
-                        Descripción: Permite a un usuario arrendador ver las
-                        solicitudes de arrendamiento para sus propiedades.
-                    </li>
-                    <li class="flex items-center gap-2">
-
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor" class="w-6 h-6 text-cyan-700">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
-                        </svg>
-                        Parametros:
-                        <ul class="mt-6 list-inside list-disc pl-5 space-y-4">
-                            <li class="flex items-center gap-2">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-cyan-700">
-                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
-                                </svg>
-                                estado (string, opcional)
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="flex items-center gap-2">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor" class="w-6 h-6 text-cyan-700">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
-                        </svg>
-                        Respuesta: Listado de solicitudes de arrendamiento con su
-                        estado correspondiente.
-                    </li>
-                </ul>
+                <h3 class="text-2xl font-extrabold text-gray-800 mb-4">6. Ver Solicitudes de Arrendamiento</h3>
+                <table class="table-auto w-full border border-sky-950">
+                    <thead>
+                        <tr class="bg-gradient-to-r from-sky-800 to-sky-950 text-gray-800">
+                            <th class="p-4 font-bold">Detalles</th>
+                            <th class="p-4 font-bold">Descripción</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="border-b">
+                            <td class="font-bold pr-4 border-r border-sky-950 p-2">Método HTTP:</td>
+                            <td class="p-2">GET</td>
+                        </tr>
+                        <tr class="border-b">
+                            <td class="font-bold pr-4 border-r border-sky-950 p-2">URL:</td>
+                            <td class="p-2">/api/arrendamientos/solicitudes</td>
+                        </tr>
+                        <tr class="border-b">
+                            <td class="font-bold pr-4 border-r border-sky-950 p-2">Descripción:</td>
+                            <td class="p-2">Permite a un usuario arrendador ver las solicitudes de arrendamiento para sus propiedades.</td>
+                        </tr>
+                        <tr class="border-b">
+                            <td class="font-bold pr-4 border-r border-sky-950 p-2">Parámetros:</td>
+                            <td class="p-2">
+                                <ul class="list-inside list-disc pl-5 space-y-2">
+                                    <li>estado (string, opcional)</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="font-bold pr-4 border-r border-sky-950 p-2">Respuesta:</td>
+                            <td class="p-2">Listado de solicitudes de arrendamiento con su estado correspondiente.</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
+            
             <div class="w-1/2 h-auto">
                 <img th:src="@{/img/seeProps.png}" alt="Imagen relleno 1" class="w-full h-full object-cover">
             </div>
@@ -973,197 +563,135 @@
         <div
             class="bg-gradient-to-r from-sky-300 to-sky-600 relative w-full max-w-4xl h-auto flex rounded-xl shadow-lg overflow-hidden">
             <div class="flex flex-col p-6 w-1/2 h-auto">
-                <h3 class="text-2xl font-extrabold text-gray-800 mb-4">7. Aceptar Solicitud de Arrendamiento </h3>
-                <ul class="mt-6 list-inside list-disc pl-5 space-y-4">
-                    <li class="flex items-center gap-2">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor" class="w-6 h-6 text-cyan-700">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
-                        </svg>
-                        Método HTTP: PUT
-                    </li>
-                    <li class="flex items-center gap-2">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor" class="w-6 h-6 text-cyan-700">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
-                        </svg>
-                        URL: /api/arrendamientos/aceptar/{id}
-                    </li>
-                    <li class="flex items-center gap-2">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor" class="w-6 h-6 text-cyan-700">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
-                        </svg>
-                        Descripción: Permite a un usuario arrendador aceptar una
-                        solicitud de arrendamiento.
-                    </li>
-                    <li class="flex items-center gap-2">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor" class="w-6 h-6 text-cyan-700">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
-                        </svg>
-                        Parametros:
-                        <ul class="mt-6 list-inside list-disc pl-5 space-y-4">
-                            <li class="flex items-center gap-2">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-cyan-700">
-                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
-                                </svg>
-                                id(int, requerido)
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="flex items-center gap-2">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor" class="w-6 h-6 text-cyan-700">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
-                        </svg>
-                        Respuesta: Confirmación de la aceptación de la solicitud de
-                        arrendamiento.
-                    </li>
-                </ul>
+                <h3 class="text-2xl font-extrabold text-gray-800 mb-4">7. Aceptar Solicitud de Arrendamiento</h3>
+                <table class="table-auto w-full border border-sky-950">
+                    <thead>
+                        <tr class="bg-gradient-to-r from-sky-800 to-sky-950 text-gray-800">
+                            <th class="p-4 font-bold">Detalles</th>
+                            <th class="p-4 font-bold">Descripción</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="border-b">
+                            <td class="font-bold pr-4 border-r border-sky-950 p-2">Método HTTP:</td>
+                            <td class="p-2">PUT</td>
+                        </tr>
+                        <tr class="border-b">
+                            <td class="font-bold pr-4 border-r border-sky-950 p-2">URL:</td>
+                            <td class="p-2">/api/arrendamientos/aceptar/{id}</td>
+                        </tr>
+                        <tr class="border-b">
+                            <td class="font-bold pr-4 border-r border-sky-950 p-2">Descripción:</td>
+                            <td class="p-2">Permite a un usuario arrendador aceptar una solicitud de arrendamiento.</td>
+                        </tr>
+                        <tr class="border-b">
+                            <td class="font-bold pr-4 border-r border-sky-950 p-2">Parámetros:</td>
+                            <td class="p-2">
+                                <ul class="list-inside list-disc pl-5 space-y-2">
+                                    <li>id (int, requerido)</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="font-bold pr-4 border-r border-sky-950 p-2">Respuesta:</td>
+                            <td class="p-2">Confirmación de la aceptación de la solicitud de arrendamiento.</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
+            
             <div class="w-1/2 h-auto">
                 <img th:src="@{/img/acceptReq.jpg}" alt="Imagen relleno 1" class="w-full h-full object-cover">
             </div>
         </div>
+
         <div
             class="bg-gradient-to-r from-sky-300 to-sky-600 relative w-full max-w-4xl h-auto flex rounded-xl shadow-lg overflow-hidden">
             <div class="flex flex-col p-6 w-1/2 h-auto">
-                <h3 class="text-2xl font-extrabold text-gray-800 mb-4">8. Cancelar Solicitud de Arrendamiento </h3>
-                <ul class="mt-6 list-inside list-disc pl-5 space-y-4">
-                    <li class="flex items-center gap-2">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor" class="w-6 h-6 text-cyan-700">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
-                        </svg>
-                        Método HTTP: PUT
-                    </li>
-                    <li class="flex items-center gap-2">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor" class="w-6 h-6 text-cyan-700">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
-                        </svg>
-                        URL: /api/arrendamientos/cancelar/{id}
-                    </li>
-                    <li class="flex items-center gap-2">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor" class="w-6 h-6 text-cyan-700">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
-                        </svg>
-                        Descripción: Permite a un usuario arrendador cancelar una
-                        solicitud de arrendamiento.
-                    </li>
-                    <li class="flex items-center gap-2">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor" class="w-6 h-6 text-cyan-700">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
-                        </svg>
-                        Parametros:
-                        <ul class="mt-6 list-inside list-disc pl-5 space-y-4">
-                            <li class="flex items-center gap-2">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-cyan-700">
-                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
-                                </svg>
-                                id(int, requerido)
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="flex items-center gap-2">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor" class="w-6 h-6 text-cyan-700">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
-                        </svg>
-                        Respuesta: Confirmación de la cancelación de la solicitud de
-                        arrendamiento.
-                    </li>
-                </ul>
+                <h3 class="text-2xl font-extrabold text-gray-800 mb-4">8. Cancelar Solicitud de Arrendamiento</h3>
+                <table class="table-auto w-full border border-sky-950">
+                    <thead>
+                        <tr class="bg-gradient-to-r from-sky-800 to-sky-950 text-gray-800">
+                            <th class="p-4 font-bold">Detalles</th>
+                            <th class="p-4 font-bold">Descripción</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="border-b">
+                            <td class="font-bold pr-4 border-r border-sky-950 p-2">Método HTTP:</td>
+                            <td class="p-2">PUT</td>
+                        </tr>
+                        <tr class="border-b">
+                            <td class="font-bold pr-4 border-r border-sky-950 p-2">URL:</td>
+                            <td class="p-2">/api/arrendamientos/cancelar/{id}</td>
+                        </tr>
+                        <tr class="border-b">
+                            <td class="font-bold pr-4 border-r border-sky-950 p-2">Descripción:</td>
+                            <td class="p-2">Permite a un usuario arrendador cancelar una solicitud de arrendamiento.</td>
+                        </tr>
+                        <tr class="border-b">
+                            <td class="font-bold pr-4 border-r border-sky-950 p-2">Parámetros:</td>
+                            <td class="p-2">
+                                <ul class="list-inside list-disc pl-5 space-y-2">
+                                    <li>id (int, requerido)</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="font-bold pr-4 border-r border-sky-950 p-2">Respuesta:</td>
+                            <td class="p-2">Confirmación de la cancelación de la solicitud de arrendamiento.</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
+            
             <div class="w-1/2 h-auto">
                 <img th:src="@{/img/denyReq.jpg}" alt="Imagen relleno 1" class="w-full h-full object-cover">
             </div>
         </div>
+
         <div
             class="bg-gradient-to-r from-sky-300 to-sky-600 relative w-full max-w-4xl h-auto flex rounded-xl shadow-lg overflow-hidden">
             <div class="flex flex-col p-6 w-1/2 h-auto">
-                <h3 class="text-2xl font-extrabold text-gray-800 mb-4">9. Calificar Arrendatario </h3>
-                <ul class="mt-6 list-inside list-disc pl-5 space-y-4">
-                    <li class="flex items-center gap-2">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor" class="w-6 h-6 text-cyan-700">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
-                        </svg>
-                        Método HTTP: POST
-                    </li>
-                    <li class="flex items-center gap-2">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor" class="w-6 h-6 text-cyan-700">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
-                        </svg>
-                        URL: /api/calificaciones/arrendatario
-                    </li>
-                    <li class="flex items-center gap-2">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor" class="w-6 h-6 text-cyan-700">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
-                        </svg>
-                        Descripción: Permite a un usuario arrendador calificar a un
-                        arrendatario.
-                    </li>
-                    <li class="flex items-center gap-2"> Parametros:
-                        <ul class="mt-6 list-inside list-disc pl-5 space-y-4">
-                            <li class="flex items-center gap-2">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-cyan-700">
-                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
-                                </svg>
-                                arrendamiento_id(int, requerido)
-                            </li>
-                            <li class="flex items-center gap-2">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-cyan-700">
-                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
-                                </svg>
-                                calificación(int, requerido)
-                            </li>
-                            <li class="flex items-center gap-2">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-cyan-700">
-                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
-                                </svg>
-                                comentario(string, opcional)
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="flex items-center gap-2">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor" class="w-6 h-6 text-cyan-700">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
-                        </svg>
-                        Respuesta: Confirmación de la calificación del arrendatario.
-                    </li>
-                </ul>
-            </div>
+    <h3 class="text-2xl font-extrabold text-gray-800 mb-4">9. Calificar Arrendatario</h3>
+    <table class="table-auto w-full border border-sky-950">
+        <thead>
+            <tr class="bg-gradient-to-r from-sky-800 to-sky-950 text-gray-800">
+                <th class="p-4 font-bold">Detalles</th>
+                <th class="p-4 font-bold">Descripción</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="border-b">
+                <td class="font-bold pr-4 border-r border-sky-950 p-2">Método HTTP:</td>
+                <td class="p-2">POST</td>
+            </tr>
+            <tr class="border-b">
+                <td class="font-bold pr-4 border-r border-sky-950 p-2">URL:</td>
+                <td class="p-2">/api/calificaciones/arrendatario</td>
+            </tr>
+            <tr class="border-b">
+                <td class="font-bold pr-4 border-r border-sky-950 p-2">Descripción:</td>
+                <td class="p-2">Permite a un usuario arrendador calificar a un arrendatario.</td>
+            </tr>
+            <tr class="border-b">
+                <td class="font-bold pr-4 border-r border-sky-950 p-2">Parámetros:</td>
+                <td class="p-2">
+                    <ul class="list-inside list-disc pl-5 space-y-2">
+                        <li>arrendamiento_id (int, requerido)</li>
+                        <li>calificación (int, requerido)</li>
+                        <li>comentario (string, opcional)</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td class="font-bold pr-4 border-r border-sky-950 p-2">Respuesta:</td>
+                <td class="p-2">Confirmación de la calificación del arrendatario.</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
             <div class="w-1/2 h-auto">
                 <img th:src="@{/img/istockphoto-1460275041-1024x1024.jpg}" alt="Imagen relleno 1"
                     class="w-full h-full object-cover">
